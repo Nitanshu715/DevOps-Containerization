@@ -6,7 +6,6 @@
 <p align="center">
   <b>Course:</b> Containerization and DevOps<br/>
   <b>Focus:</b> Virtualization, Containers, CI/CD, Cloud-Native Systems<br/>
-  <b>Tools:</b> Linux · Vagrant · Docker · VirtualBox · Git · CI/CD
 </p>
 
 ---
