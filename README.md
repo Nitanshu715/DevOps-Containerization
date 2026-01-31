@@ -86,17 +86,19 @@ containerization-and-devops-lab/
 
 ## 🧪 Experiments Performed
 
-### 🖥️ Experiment 1 — Virtual Machines vs Containers  
-🔗 https://github.com/Nitanshu715/DevOps-Containerization/tree/main/Experiment-1  
+## 🧪 Experiments Performed
 
-A practical DevOps-focused comparison between Virtual Machines and Containers using Ubuntu, VirtualBox, Vagrant, Docker, and Nginx. The experiment demonstrates infrastructure provisioning with IaC, service deployment inside a VM, containerized deployment of the same application, and performance/resource comparison between the two environments.
+### 🖥️ [Experiment 1 — Virtual Machines vs Containers](https://github.com/Nitanshu715/DevOps-Containerization/tree/main/Experiment-1)
+
+A DevOps-oriented comparison between Virtual Machines and Containers using Ubuntu, VirtualBox, Vagrant, Docker, and Nginx. Demonstrates infrastructure provisioning, VM-based service deployment, containerized application execution, and architectural differences in resource usage and isolation.
 
 ---
 
-### 🐳 Experiment 2 — Docker Installation & Container Lifecycle  
-🔗 https://github.com/Nitanshu715/DevOps-Containerization/tree/main/Experiment-2  
+### 🐳 [Experiment 2 — Docker Installation & Container Lifecycle](https://github.com/Nitanshu715/DevOps-Containerization/tree/main/Experiment-2)
 
-This experiment covers Docker fundamentals including image pulling, container deployment, port mapping, runtime verification, handling port conflicts, and full container lifecycle management (stop, remove, and image cleanup). It simulates real DevOps container deployment workflows.
+Covers Docker fundamentals including image pulling, container execution with port mapping, service verification, port conflict handling, and full container lifecycle management — reflecting real-world container deployment workflows.
+
+
 
 
 ---
