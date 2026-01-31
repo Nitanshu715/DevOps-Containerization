@@ -9,6 +9,12 @@
 </p>
 
 ---
+<p align="center">
+  <b>Course:</b> Nitanshu Tak <br/>
+  <b>Focus:</b> SapID - 500121943 <br/>
+</p>
+
+---
 
 ## 📌 About This Repository
 
