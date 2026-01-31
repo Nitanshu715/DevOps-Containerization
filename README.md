@@ -1,4 +1,4 @@
-# 🚀 Containerization & DevOps Lab  
+# Containerization & DevOps Lab  
 ### *Master Repository for All Experiments*
 
 ---
@@ -16,7 +16,7 @@
   <b>Batch:</b> 2 <br/>
 </p>
 
-## 📌 About This Repository
+## About This Repository
 
 This repository serves as the **master lab repository** for the subject  
 **Containerization and DevOps**.
@@ -32,7 +32,7 @@ automation, and documentation coexist in a clean, scalable manner.
 
 ---
 
-## 🧠 Why This Repository Exists
+## Why This Repository Exists
 
 Modern software systems require:
 - Fast deployment
@@ -49,52 +49,16 @@ This lab repository demonstrates **hands-on implementation** of:
 
 ---
 
-## 🗂️ Repository Structure
-
-```text
-containerization-and-devops-lab/
-│
-├── README.md                 # Master documentation (this file)
-│
-├── experiment-01-vm-vs-container/
-│   ├── README.md
-│   ├── vagrant/
-│   ├── docker/
-│   └── screenshots/
-│
-├── experiment-02-linux-basics/
-│   ├── README.md
-│   └── commands/
-│
-├── experiment-03-docker-basics/
-│   ├── README.md
-│   ├── Dockerfile
-│   └── outputs/
-│
-├── experiment-04-docker-compose/
-│   ├── README.md
-│   ├── docker-compose.yml
-│
-├── experiment-05-ci-cd-introduction/
-│   ├── README.md
-│   └── pipeline-notes/
-│
-└── resources/
-    ├── cheatsheets/
-    └── references/
-```
 
 ## 🧪 Experiments Performed
 
-## 🧪 Experiments Performed
-
-### 🖥️ [Experiment 1 — Virtual Machines vs Containers](https://github.com/Nitanshu715/DevOps-Containerization/tree/main/Experiment-1)
+### 🖥️ [Experiment 1 — Virtual Machines vs Containers](https://github.com/Nitanshu715/DevOps-Containerization/tree/main/Experiment-1/README/md)
 
 A DevOps-oriented comparison between Virtual Machines and Containers using Ubuntu, VirtualBox, Vagrant, Docker, and Nginx. Demonstrates infrastructure provisioning, VM-based service deployment, containerized application execution, and architectural differences in resource usage and isolation.
 
 ---
 
-### 🐳 [Experiment 2 — Docker Installation & Container Lifecycle](https://github.com/Nitanshu715/DevOps-Containerization/tree/main/Experiment-2)
+### 🐳 [Experiment 2 — Docker Installation & Container Lifecycle](https://github.com/Nitanshu715/DevOps-Containerization/tree/main/Experiment-2/README.md)
 
 Covers Docker fundamentals including image pulling, container execution with port mapping, service verification, port conflict handling, and full container lifecycle management — reflecting real-world container deployment workflows.
 
