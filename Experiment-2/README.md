@@ -1,13 +1,13 @@
-# 🐳 Docker Experiment 2 — Installation, Configuration & Container Lifecycle
+# Docker Experiment 2 — Installation, Configuration & Container Lifecycle
 
-## ✨ Overview
+## Overview
 This experiment demonstrates the practical implementation of containerization using Docker. The goal is to understand how Docker images are pulled, containers are deployed, services are exposed using port mapping, and how the complete container lifecycle is managed.
 
 Containers provide lightweight, fast, and portable environments compared to traditional virtual machines. This lab focuses on real-world Docker CLI operations used in DevOps and Cloud environments.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 - Understand Docker architecture
 - Pull images from Docker Hub
 - Run containers in detached mode
@@ -19,7 +19,7 @@ Containers provide lightweight, fast, and portable environments compared to trad
 
 ---
 
-## 🖥️ System Requirements
+## System Requirements
 | Component | Details |
 |-----------|---------|
 | OS | Windows / Linux / macOS |
@@ -29,7 +29,7 @@ Containers provide lightweight, fast, and portable environments compared to trad
 
 ---
 
-## 🧠 Docker Concepts Used
+## Docker Concepts Used
 | Concept | Explanation |
 |---------|-------------|
 | Image | Read-only template used to create containers |
@@ -40,9 +40,9 @@ Containers provide lightweight, fast, and portable environments compared to trad
 
 ---
 
-## 🚀 Step-by-Step Procedure
+## Step-by-Step Procedure
 
-### 🔹 Step 1 — Pull nginx Image
+### Step 1 — Pull nginx Image
 ```bash
 docker pull nginx
 ```
@@ -50,7 +50,7 @@ Downloads the official nginx web server image.
 
 ---
 
-### 🔹 Step 2 — Run Container with Port Mapping
+### Step 2 — Run Container with Port Mapping
 ```bash
 docker run -d -p 8080:80 nginx
 ```
@@ -64,7 +64,7 @@ Now open: **http://localhost:8080**
 
 ---
 
-### 🔹 Step 3 — Verify Running Containers
+### Step 3 — Verify Running Containers
 ```bash
 docker ps
 ```
@@ -79,38 +79,38 @@ docker stop <container_id>
 
 ---
 
-### 🔹 Step 5 — Remove Container
+### Step 5 — Remove Container
 ```bash
 docker rm <container_id>
 ```
 
 ---
 
-### 🔹 Step 6 — Remove Docker Image
+### Step 6 — Remove Docker Image
 ```bash
 docker rmi nginx
 ```
 
 ---
 
-## ⚠️ Observed Behavior
+## Observed Behavior
 - Docker prevents multiple containers from using the same host port.
 - Images cannot be deleted if containers reference them.
 - Port mapping enables browser access.
 
 ---
 
-## 📊 Results
+## Results
 The nginx image was pulled, container deployed, verified, stopped, removed, and the image deleted successfully.
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 Docker simplifies application deployment using containers. Compared to VMs, containers start faster, consume fewer resources, and are ideal for cloud-native microservices.
 
 ---
 
-## 🔥 Key Takeaways
+## Key Takeaways
 - Containers ≠ Virtual Machines
 - Port mapping is essential for accessibility
 - Docker CLI manages full lifecycle
