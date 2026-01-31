@@ -80,50 +80,6 @@ containerization-and-devops-lab/
 
 ---
 
-## 🧪 Experiments Overview
-
-### 🧩 Experiment 01: Virtual Machines vs Containers
-- Tools: VirtualBox, Vagrant, Docker
-- OS: Ubuntu
-- Application: Nginx
-- Key Concepts:
-  - VM vs Container architecture
-  - Resource utilization
-  - Isolation levels
-
----
-
-### 🧩 Experiment 02: Linux Fundamentals for DevOps
-- Shell commands
-- File system hierarchy
-- Process management
-- Package management (`apt`)
-
----
-
-### 🧩 Experiment 03: Docker Fundamentals
-- Docker images and containers
-- Docker CLI
-- Container lifecycle
-- Port mapping
-
----
-
-### 🧩 Experiment 04: Docker Compose
-- Multi-container applications
-- Service orchestration
-- YAML-based configuration
-
----
-
-### 🧩 Experiment 05: CI/CD Basics
-- DevOps lifecycle
-- Automation pipelines
-- Continuous Integration concepts
-- Continuous Deployment overview
-
----
-
 ## ⚙️ Technologies & Tools Used
 
 ```text
