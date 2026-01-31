@@ -1,9 +1,9 @@
-# 🚀 Experiment 1: Virtual Machines vs Containers  
+# Experiment 1: Virtual Machines vs Containers  
 ## A Comprehensive DevOps-Level Comparative Study using Ubuntu, Vagrant, Docker & Nginx
 
 ---
 
-## 📌 Overview
+## Overview
 
 This experiment is designed to provide a **deep, practical, and architectural understanding** of two foundational
 technologies used in modern DevOps and cloud infrastructure:
@@ -16,7 +16,7 @@ to ensure a fair, real-world comparison.
 
 ---
 
-## 🧠 Why This Experiment Matters (DevOps Perspective)
+## Why This Experiment Matters (DevOps Perspective)
 
 In real-world DevOps pipelines:
 - Virtual Machines are used for **infrastructure isolation**
@@ -32,7 +32,7 @@ This experiment bridges **theory + hands-on execution**.
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 - Understand virtualization vs containerization at the architectural level
 - Automate VM provisioning using Vagrant
@@ -44,7 +44,7 @@ This experiment bridges **theory + hands-on execution**.
 
 ---
 
-## 🖥️ System & Software Requirements
+## System & Software Requirements
 
 ### Hardware Requirements
 - 64-bit processor with Intel VT-x / AMD-V enabled
@@ -61,7 +61,7 @@ This experiment bridges **theory + hands-on execution**.
 
 ---
 
-## 🏗️ High-Level Architecture
+## High-Level Architecture
 
 ### Virtual Machine Stack
 ```
@@ -82,7 +82,7 @@ Physical Hardware
 
 ---
 
-## 🔍 Conceptual Difference: VM vs Container
+## Conceptual Difference: VM vs Container
 
 | Aspect | Virtual Machine | Container |
 |------|----------------|-----------|
@@ -95,22 +95,22 @@ Physical Hardware
 
 ---
 
-## 🧩 Part A: Virtual Machine Implementation using Vagrant
+## Part A: Virtual Machine Implementation using Vagrant
 
-### 🔹 Why Vagrant?
+### Why Vagrant?
 Vagrant allows **Infrastructure as Code (IaC)**, enabling reproducible, automated,
 and consistent virtual machine environments without manual OS installation.
 
 ---
 
-### 🔹 Step 1: Verify Vagrant Installation
+### Step 1: Verify Vagrant Installation
 ```bash
 vagrant --version
 ```
 
 ---
 
-### 🔹 Step 2: Create Project Workspace
+### Step 2: Create Project Workspace
 ```bash
 mkdir vm-lab
 cd vm-lab
@@ -118,7 +118,7 @@ cd vm-lab
 
 ---
 
-### 🔹 Step 3: Initialize Ubuntu VM Configuration
+### Step 3: Initialize Ubuntu VM Configuration
 ```bash
 vagrant init ubuntu/jammy64
 ```
@@ -130,7 +130,7 @@ This generates a `Vagrantfile` which defines:
 
 ---
 
-### 🔹 Step 4: Provision and Boot the VM
+### Step 4: Provision and Boot the VM
 ```bash
 vagrant up
 ```
@@ -143,7 +143,7 @@ Vagrant performs:
 
 ---
 
-### 🔹 Step 5: Access the VM via SSH
+### Step 5: Access the VM via SSH
 ```bash
 vagrant ssh
 ```
@@ -152,26 +152,26 @@ This opens a secure terminal session into the Ubuntu VM.
 
 ---
 
-## 🌐 Deploying Nginx inside the Virtual Machine
+## Deploying Nginx inside the Virtual Machine
 
-### 🔹 Update Package Index
+### Update Package Index
 ```bash
 sudo apt update
 ```
 
-### 🔹 Install Nginx
+### Install Nginx
 ```bash
 sudo apt install -y nginx
 ```
 
-### 🔹 Start Nginx Service
+### Start Nginx Service
 ```bash
 sudo systemctl start nginx
 ```
 
 ---
 
-### 🔍 Verify Nginx Deployment (VM)
+### Verify Nginx Deployment (VM)
 ```bash
 curl localhost
 ```
@@ -180,7 +180,7 @@ Successful HTML output confirms the service is running.
 
 ---
 
-## 📊 Resource Monitoring (Virtual Machine)
+## Resource Monitoring (Virtual Machine)
 
 ```bash
 free -h
@@ -195,15 +195,15 @@ These commands provide:
 
 ---
 
-## 🧩 Part B: Containerization using Docker
+## Part B: Containerization using Docker
 
-### 🔹 Why Containers?
+### Why Containers?
 Containers allow applications to run consistently across environments,
 eliminating dependency and configuration mismatches.
 
 ---
 
-### 🔹 Step 1: Install Docker Engine
+### Step 1: Install Docker Engine
 ```bash
 sudo apt update
 sudo apt install -y docker.io
@@ -211,7 +211,7 @@ sudo apt install -y docker.io
 
 ---
 
-### 🔹 Step 2: Start and Enable Docker
+### Step 2: Start and Enable Docker
 ```bash
 sudo systemctl start docker
 sudo systemctl enable docker
@@ -219,7 +219,7 @@ sudo systemctl enable docker
 
 ---
 
-### 🔹 Step 3: Configure Docker Permissions
+### Step 3: Configure Docker Permissions
 ```bash
 sudo usermod -aG docker vagrant
 ```
@@ -232,14 +232,14 @@ vagrant ssh
 
 ---
 
-### 🔍 Verify Docker Installation
+### Verify Docker Installation
 ```bash
 docker --version
 ```
 
 ---
 
-## 🌐 Deploying Nginx as a Container
+## Deploying Nginx as a Container
 
 ```bash
 docker run -d -p 8080:80 --name nginx-container nginx
@@ -252,14 +252,14 @@ Explanation:
 
 ---
 
-### 🔍 Verify Nginx Container
+### Verify Nginx Container
 ```bash
 curl localhost:8080
 ```
 
 ---
 
-## 📊 Resource Monitoring (Container)
+## Resource Monitoring (Container)
 
 ```bash
 docker stats
@@ -270,7 +270,7 @@ Demonstrates significantly lower resource usage compared to VM-based deployment.
 
 ---
 
-## 🧹 Cleanup & Environment Management
+## Cleanup & Environment Management
 
 ```bash
 docker stop nginx-container
@@ -281,7 +281,7 @@ vagrant halt
 
 ---
 
-## 📈 Final Comparative Analysis
+## Final Comparative Analysis
 
 | Parameter | Virtual Machine | Container |
 |---------|----------------|-----------|
@@ -294,7 +294,7 @@ vagrant halt
 
 ---
 
-## ✅ Result
+## Result
 
 The experiment confirms that:
 - Containers are more lightweight and resource-efficient
@@ -303,7 +303,7 @@ The experiment confirms that:
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
 Virtual Machines and Containers serve different but complementary purposes.
 While VMs remain essential for strong isolation and infrastructure boundaries,
@@ -313,7 +313,7 @@ This experiment successfully demonstrates both technologies in a real-world DevO
 
 ---
 
-## 👨‍💻 Author Notes
+## Author Notes
 
 This documentation follows **industry-standard DevOps practices** and mirrors
 real production workflows involving virtualization, containerization,
