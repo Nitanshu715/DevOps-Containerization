@@ -52,13 +52,13 @@ This lab repository demonstrates **hands-on implementation** of:
 
 ## Experiments Performed
 
-### [Experiment 1 — Virtual Machines vs Containers](https://github.com/Nitanshu715/DevOps-Containerization/tree/main/Experiment-1/README.md)
+### [Experiment 1 — Virtual Machines vs Containers](./experiment-1/)
 
 A DevOps-oriented comparison between Virtual Machines and Containers using Ubuntu, VirtualBox, Vagrant, Docker, and Nginx. Demonstrates infrastructure provisioning, VM-based service deployment, containerized application execution, and architectural differences in resource usage and isolation.
 
 ---
 
-### [Experiment 2 — Docker Installation & Container Lifecycle](https://github.com/Nitanshu715/DevOps-Containerization/tree/main/Experiment-2/README.md)
+### [Experiment 2 — Docker Installation & Container Lifecycle](./experiment-2/)
 
 Covers Docker fundamentals including image pulling, container execution with port mapping, service verification, port conflict handling, and full container lifecycle management — reflecting real-world container deployment workflows.
 
