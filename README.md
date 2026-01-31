@@ -50,15 +50,15 @@ This lab repository demonstrates **hands-on implementation** of:
 ---
 
 
-## 🧪 Experiments Performed
+## Experiments Performed
 
-### 🖥️ [Experiment 1 — Virtual Machines vs Containers](https://github.com/Nitanshu715/DevOps-Containerization/tree/main/Experiment-1/README.md)
+### [Experiment 1 — Virtual Machines vs Containers](https://github.com/Nitanshu715/DevOps-Containerization/tree/main/Experiment-1/README.md)
 
 A DevOps-oriented comparison between Virtual Machines and Containers using Ubuntu, VirtualBox, Vagrant, Docker, and Nginx. Demonstrates infrastructure provisioning, VM-based service deployment, containerized application execution, and architectural differences in resource usage and isolation.
 
 ---
 
-### 🐳 [Experiment 2 — Docker Installation & Container Lifecycle](https://github.com/Nitanshu715/DevOps-Containerization/tree/main/Experiment-2/README.md)
+### [Experiment 2 — Docker Installation & Container Lifecycle](https://github.com/Nitanshu715/DevOps-Containerization/tree/main/Experiment-2/README.md)
 
 Covers Docker fundamentals including image pulling, container execution with port mapping, service verification, port conflict handling, and full container lifecycle management — reflecting real-world container deployment workflows.
 
@@ -67,7 +67,7 @@ Covers Docker fundamentals including image pulling, container execution with por
 
 ---
 
-## ⚙️ Technologies & Tools Used
+## Technologies & Tools Used
 
 ```text
 Operating Systems:
@@ -94,7 +94,7 @@ DevOps Concepts:
 
 ---
 
-## 🧠 Learning Outcomes
+## Learning Outcomes
 
 By completing all experiments in this repository, the learner will be able to:
 
@@ -107,7 +107,7 @@ By completing all experiments in this repository, the learner will be able to:
 
 ---
 
-## 🧩 How to Use This Repository
+## How to Use This Repository
 
 ```bash
 # Clone repository
@@ -122,7 +122,7 @@ cat README.md
 
 ---
 
-## 🏗️ DevOps Mindset Demonstrated
+## DevOps Mindset Demonstrated
 
 This repository reflects:
 - Modular design
@@ -136,7 +136,7 @@ making this repository suitable for **academic evaluation** as well as **portfol
 
 ---
 
-## 📈 Future Enhancements
+## Future Enhancements
 
 - GitHub Actions CI pipelines
 - Docker image versioning
@@ -146,7 +146,7 @@ making this repository suitable for **academic evaluation** as well as **portfol
 
 ---
 
-## 🧑‍💻 Author
+## Author
 
 **Name:** Nitanshu  
 **Program:** B.Tech Computer Science Engineering  
@@ -155,7 +155,7 @@ making this repository suitable for **academic evaluation** as well as **portfol
 
 ---
 
-## ⭐ Final Note
+## Final Note
 
 This repository is not just a lab submission —  
 it is a **foundation for real DevOps engineering practices**.
