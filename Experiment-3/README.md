@@ -153,6 +153,6 @@ docker rm nginx-official nginx-ubuntu nginx-alpine
 
 ---
 
-✨ Built for learning DevOps, Containers, and Cloud-Native best practices.
+Built for learning DevOps, Containers, and Cloud-Native best practices.
 
 
