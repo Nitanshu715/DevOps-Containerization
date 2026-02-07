@@ -1,10 +1,10 @@
-# 🚀 NGINX Docker Image Comparison Lab
+# NGINX Docker Image Comparison Lab
 
 A hands-on DevOps lab demonstrating how different base images impact Docker image size, performance, security, and layers using **NGINX**.
 
 ---
 
-## 📌 Project Objective
+## Project Objective
 
 This project explores:
 
@@ -15,7 +15,7 @@ This project explores:
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 
 ```
 nginx-docker-lab/
@@ -31,7 +31,7 @@ nginx-docker-lab/
 
 ---
 
-## 🐳 Part 1 — Run Official NGINX Image
+## Part 1 — Run Official NGINX Image
 
 ### Pull Image
 ```bash
@@ -51,7 +51,7 @@ http://localhost:8080
 
 ---
 
-## 🧱 Part 2 — Build NGINX Using Ubuntu Base
+## Part 2 — Build NGINX Using Ubuntu Base
 
 ### Dockerfile
 ```dockerfile
@@ -76,7 +76,7 @@ docker run -d --name nginx-ubuntu -p 8081:80 nginx-ubuntu
 
 ---
 
-## 🪶 Part 3 — Build NGINX Using Alpine Base
+## Part 3 — Build NGINX Using Alpine Base
 
 ### Dockerfile
 ```dockerfile
@@ -101,7 +101,7 @@ docker run -d --name nginx-alpine -p 8082:80 nginx-alpine
 
 ---
 
-## 🔬 Image Size Comparison
+## Image Size Comparison
 
 ```bash
 docker images
@@ -115,7 +115,7 @@ docker images
 
 ---
 
-## 🧬 Inspect Image Layers
+## Inspect Image Layers
 
 ```bash
 docker history nginx
@@ -127,7 +127,7 @@ Each Dockerfile command creates a new layer. More OS packages = larger layers.
 
 ---
 
-## ⚖️ Performance & Security Comparison
+## Performance & Security Comparison
 
 | Feature | Official | Ubuntu | Alpine |
 |--------|----------|--------|--------|
@@ -138,13 +138,13 @@ Each Dockerfile command creates a new layer. More OS packages = larger layers.
 
 ---
 
-## 🎯 Conclusion
+## Conclusion
 
 This lab proves that base image selection significantly affects Docker image size, security posture, and deployment efficiency. Alpine-based images are ideal for microservices and cloud environments, while Ubuntu provides flexibility for complex applications. Official images offer a balanced, production-ready setup.
 
 ---
 
-## 🧹 Cleanup
+## Cleanup
 
 ```bash
 docker stop nginx-official nginx-ubuntu nginx-alpine
