@@ -1,4 +1,4 @@
-# Experiment 4 — NGINX Containerization and Reverse Proxy
+# NGINX Containerization and Reverse Proxy
 
 ## A Comprehensive DevOps-Level Comparative Study using Ubuntu, Vagrant, Docker & Nginx
 
