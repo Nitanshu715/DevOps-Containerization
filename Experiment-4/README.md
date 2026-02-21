@@ -1,246 +1,282 @@
-# NGINX CONTAINERIZATION & REVERSE PROXY ARCHITECTURE LAB
+# Experiment 4 — NGINX Containerization and Reverse Proxy
 
-<p align="center">
-  <strong>Enterprise‑Style Web Infrastructure Deployment using Docker, WSL, and Native NGINX</strong>
-</p>
+## A Comprehensive DevOps-Level Comparative Study using Ubuntu, Vagrant, Docker & Nginx
 
 ---
 
-## PROJECT OVERVIEW
+## Overview
 
-This project demonstrates a complete infrastructure lifecycle for deploying and managing NGINX across multiple environments, including:
+This experiment is designed to provide a deep, practical, and architectural understanding of two foundational
+technologies used in modern DevOps and cloud infrastructure:
 
-- Official Docker container deployment
-- Custom Ubuntu-based image engineering
-- Lightweight Alpine-based image optimization
-- Volume binding for dynamic content management
-- Native NGINX installation inside WSL Ubuntu
-- Reverse proxy implementation with backend routing
-- Cross-environment debugging between Windows and WSL
+- Virtual Machines (VMs)
+- Containers
 
-The implementation replicates production‑style architecture principles in a controlled development environment.
+Both technologies are implemented using Ubuntu Linux and a common application stack (Nginx Web Server)
+to ensure a fair, real-world comparison.
 
 ---
 
-## ARCHITECTURE DESIGN
+## Why This Experiment Matters (DevOps Perspective)
 
-### Infrastructure Layers
+In real-world DevOps pipelines:
+- Virtual Machines are used for infrastructure isolation
+- Containers are used for application portability and scalability
 
-```
-Client Browser
-      │
-      ▼
-NGINX Reverse Proxy (Port 80 - WSL)
-      │
-      ▼
-Backend Service (Port 3000 - Python HTTP Server)
-```
+Understanding when and why to use each is critical for:
+- CI/CD pipelines
+- Cloud-native deployments
+- Microservices architecture
+- Platform engineering
 
-### Dockerized Instances
-
-| Container Name   | Base Image | Port Mapping | Purpose |
-|------------------|-----------|-------------|----------|
-| nginx-official   | nginx     | 8080:80     | Official optimized image |
-| nginx-ubuntu     | ubuntu    | 8081:80     | Full OS-based custom image |
-| nginx-alpine     | alpine    | 8082:80     | Minimal lightweight image |
-| nginx-volume     | nginx     | 8083:80     | Bind-mounted static content |
+This experiment bridges theory and hands-on execution.
 
 ---
 
-## TECHNOLOGY STACK
+## Learning Objectives
 
+- Understand virtualization vs containerization at the architectural level
+- Automate VM provisioning using Vagrant
+- Deploy and manage services inside a Linux VM
+- Containerize applications using Docker
+- Observe and analyze system resource utilization
+- Compare performance, isolation, and scalability
+- Align academic concepts with industry DevOps practices
+
+---
+
+## System & Software Requirements
+
+### Hardware Requirements
+- 64-bit processor with Intel VT-x / AMD-V enabled
+- Minimum 4 GB RAM (8 GB recommended)
+- Active internet connection
+
+### Software Requirements
+- Windows Operating System
+- Oracle VirtualBox (Hypervisor)
+- Vagrant (Infrastructure as Code tool)
+- Ubuntu Linux (Vagrant Box)
 - Docker Engine
-- Ubuntu 22.04 (WSL2)
-- NGINX 1.24
-- Python 3 HTTP Server
-- Windows 10/11 with WSL2
+- Nginx Web Server
 
 ---
 
-## 1. OFFICIAL NGINX DEPLOYMENT
+## High-Level Architecture
 
+### Virtual Machine Stack
+```
+Physical Hardware
+ └── Windows Host OS
+     └── VirtualBox Hypervisor
+         └── Ubuntu Guest OS
+             └── Nginx Service
+```
+
+### Container Stack
+```
+Physical Hardware
+ └── Ubuntu OS (inside VM)
+     └── Docker Engine
+         └── Nginx Container
+```
+
+---
+
+## Conceptual Difference: VM vs Container
+
+| Aspect | Virtual Machine | Container |
+|--------|----------------|-----------|
+| Kernel | Own Kernel | Shares Host Kernel |
+| Startup Time | Slow | Very Fast |
+| Resource Usage | High | Low |
+| Isolation | Strong | Process-level |
+| Portability | Moderate | Very High |
+| Use Case | OS-level isolation | App-level deployment |
+
+---
+
+## Part A: Virtual Machine Implementation using Vagrant
+
+### Why Vagrant?
+Vagrant allows Infrastructure as Code (IaC), enabling reproducible, automated,
+and consistent virtual machine environments without manual OS installation.
+
+---
+
+### Step 1: Verify Vagrant Installation
 ```bash
-docker pull nginx
-docker run -d --name nginx-official -p 8080:80 nginx
+vagrant --version
 ```
-
-This container provides a production-optimized NGINX runtime environment.
 
 ---
 
-## 2. UBUNTU-BASED CUSTOM IMAGE
-
-### Dockerfile
-
-```dockerfile
-FROM ubuntu:22.04
-
-RUN apt update && \
-    apt install -y nginx && \
-    apt clean
-
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
-```
-
-### Build & Run
-
+### Step 2: Create Project Workspace
 ```bash
-docker build -t nginx-ubuntu .
-docker run -d --name nginx-ubuntu -p 8081:80 nginx-ubuntu
+mkdir vm-lab
+cd vm-lab
 ```
-
-This approach demonstrates OS-level package control and extended system tooling availability.
 
 ---
 
-## 3. ALPINE-BASED LIGHTWEIGHT IMAGE
-
-### Dockerfile
-
-```dockerfile
-FROM alpine:latest
-
-RUN apk add --no-cache nginx
-
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
-```
-
-### Build & Run
-
+### Step 3: Initialize Ubuntu VM Configuration
 ```bash
-docker build -t nginx-alpine .
-docker run -d --name nginx-alpine -p 8082:80 nginx-alpine
+vagrant init ubuntu/jammy64
 ```
-
-Alpine significantly reduces image size and attack surface.
 
 ---
 
-## 4. VOLUME BIND MOUNT IMPLEMENTATION
-
+### Step 4: Provision and Boot the VM
 ```bash
-docker run -d \
-  --name nginx-volume \
-  -p 8083:80 \
-  -v %cd%\html:/usr/share/nginx/html \
-  nginx
+vagrant up
 ```
-
-Bind mounts allow real-time content updates without rebuilding images.
 
 ---
 
-## 5. NATIVE NGINX INSTALLATION (WSL)
+### Step 5: Access the VM via SSH
+```bash
+vagrant ssh
+```
+
+---
+
+## Deploying Nginx inside the Virtual Machine
 
 ```bash
 sudo apt update
-sudo apt install nginx
-sudo service nginx start
+sudo apt install -y nginx
+sudo systemctl start nginx
 ```
-
-This provides system-level control beyond container isolation.
 
 ---
 
-## 6. BACKEND SERVICE IMPLEMENTATION
-
-```python
-from http.server import BaseHTTPRequestHandler, HTTPServer
-
-class Handler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        self.send_response(200)
-        self.end_headers()
-        self.wfile.write(b"Hello from Backend Server on Port 3000!")
-
-server = HTTPServer(("127.0.0.1", 3000), Handler)
-server.serve_forever()
-```
-
-Run inside WSL:
+### Verify Nginx Deployment (VM)
 
 ```bash
-python3 app.py
+curl localhost
 ```
 
 ---
 
-## 7. REVERSE PROXY CONFIGURATION
-
-Edit:
-
-```
-/etc/nginx/sites-available/default
-```
-
-Replace server block with:
-
-```nginx
-server {
-    listen 80;
-
-    location / {
-        proxy_pass http://127.0.0.1:3000;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-    }
-}
-```
-
-Restart service:
+## Resource Monitoring (Virtual Machine)
 
 ```bash
-sudo service nginx restart
+free -h
+htop
+systemd-analyze
 ```
 
 ---
 
-## IMAGE SIZE COMPARISON
+## Part B: Containerization using Docker
 
-| Image Type      | Approximate Size |
-|-----------------|------------------|
-| nginx:latest   | ~140MB |
-| nginx-ubuntu   | ~220MB+ |
-| nginx-alpine   | ~25-30MB |
+### Step 1: Install Docker Engine
 
-Alpine provides maximum efficiency. Ubuntu provides extensibility.
-
----
-
-## NETWORKING & DEBUGGING INSIGHTS
-
-- Identified Apache and NGINX port conflicts
-- Diagnosed 502 Bad Gateway errors
-- Resolved Windows vs WSL loopback isolation
-- Verified upstream availability using:
-  ```bash
-  curl http://127.0.0.1:3000
-  sudo ss -tulpn
-  ```
-- Ensured backend service executed inside WSL environment
+```bash
+sudo apt update
+sudo apt install -y docker.io
+```
 
 ---
 
-## PRODUCTION CONCEPTS DEMONSTRATED
+### Step 2: Start and Enable Docker
 
-- Containerization
-- OS-based image engineering
-- Minimal attack surface optimization
-- Bind-mounted storage abstraction
-- Reverse proxy routing
-- Service isolation
-- Layer inspection using `docker history`
-- Infrastructure debugging methodology
+```bash
+sudo systemctl start docker
+sudo systemctl enable docker
+```
 
 ---
 
-## CONCLUSION
+### Step 3: Configure Docker Permissions
 
-This project demonstrates a structured, production-style deployment workflow incorporating container orchestration, system-level configuration, network isolation debugging, and reverse proxy architecture design.
+```bash
+sudo usermod -aG docker vagrant
+exit
+vagrant ssh
+```
 
-It represents a complete DevOps pipeline from container creation to service routing abstraction.
+---
+
+### Verify Docker Installation
+
+```bash
+docker --version
+```
+
+---
+
+## Deploying Nginx as a Container
+
+```bash
+docker run -d -p 8080:80 --name nginx-container nginx
+```
+
+---
+
+### Verify Nginx Container
+
+```bash
+curl localhost:8080
+```
+
+---
+
+## Resource Monitoring (Container)
+
+```bash
+docker stats
+free -h
+```
+
+---
+
+## Cleanup & Environment Management
+
+```bash
+docker stop nginx-container
+docker rm nginx-container
+exit
+vagrant halt
+```
+
+---
+
+## Final Comparative Analysis
+
+| Parameter | Virtual Machine | Container |
+|------------|----------------|-----------|
+| Boot Time | High | Very Low |
+| Memory Usage | High | Low |
+| CPU Overhead | Higher | Minimal |
+| Disk Footprint | Large | Small |
+| Isolation Level | Strong | Moderate |
+| Scalability | Moderate | High |
+
+---
+
+## Result
+
+The experiment confirms that:
+- Containers are more lightweight and resource-efficient
+- Virtual Machines provide stronger isolation and OS-level abstraction
+- Containers are better suited for modern DevOps and microservices workflows
+
+---
+
+## Conclusion
+
+Virtual Machines and Containers serve different but complementary purposes.
+While VMs remain essential for strong isolation and infrastructure boundaries,
+containers dominate application deployment due to speed, efficiency, and scalability.
+
+This experiment successfully demonstrates both technologies in a real-world DevOps context.
+
+---
+
+## Author Notes
+
+This documentation follows industry-standard DevOps practices and mirrors
+real production workflows involving virtualization, containerization,
+and automated infrastructure management.
 
