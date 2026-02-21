@@ -76,6 +76,13 @@ A comprehensive, production-style exploration of NGINX deployment using Docker, 
 
 ---
 
+### [Experiment 5 — Docker Essentials](./Experiment-5/)
+
+This project demonstrates the complete containerization lifecycle of a Python Flask web application using Docker. It includes single-stage and multi-stage Docker builds, optimized image layering, dependency management, container execution, version tagging, and publishing to Docker Hub.
+
+---
+
+
 ## Technologies & Tools Used
 
 ```text
