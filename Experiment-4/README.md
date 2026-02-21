@@ -1,8 +1,4 @@
-
-
-# ───────────────────────────────────────────────────────────────
 # NGINX CONTAINERIZATION & REVERSE PROXY ARCHITECTURE LAB
-# ───────────────────────────────────────────────────────────────
 
 <p align="center">
   <strong>Enterprise‑Style Web Infrastructure Deployment using Docker, WSL, and Native NGINX</strong>
