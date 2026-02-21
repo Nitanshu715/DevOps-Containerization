@@ -68,6 +68,11 @@ Covers Docker fundamentals including image pulling, container execution with por
 
 This lab demonstrates how NGINX can be deployed using different Docker base images and analyzes how base OS choices affect image size, layers, and efficiency. It highlights the practical trade-offs between official, Ubuntu-based, and Alpine-based containers in real-world DevOps environments.
 
+---
+
+### [Experiment 4 — NGINX Containerization and Reverse Proxy](./Experiment-4/)
+
+A comprehensive, production-style exploration of NGINX deployment using Docker, custom image engineering, volume management, native WSL installation, and reverse proxy architecture implementation.
 
 ---
 
