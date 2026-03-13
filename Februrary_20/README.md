@@ -4,7 +4,7 @@
 
 ---
 
-# 📌 Overview
+# Overview
 
 This laboratory exercise explores Docker networking from foundational container networking to advanced orchestration networking using Docker Swarm.
 
@@ -14,7 +14,7 @@ The lab also explores networking limitations within Docker Desktop environments 
 
 ---
 
-# 🎯 Objectives
+# Objectives
 
 - Understand Docker networking architecture
 - Create and manage custom Docker bridge networks
@@ -30,7 +30,7 @@ The lab also explores networking limitations within Docker Desktop environments 
 
 ---
 
-# 🖥 System Configuration
+# System Configuration
 
 Operating System  
 Windows 11
@@ -59,7 +59,7 @@ Container Images Used
 
 ---
 
-# 📚 Docker Networking Architecture
+# Docker Networking Architecture
 
 Docker provides multiple networking drivers which allow containers to communicate within different scopes and architectures.
 
@@ -72,7 +72,7 @@ Understanding these networking models is essential for modern DevOps infrastruct
 
 ---
 
-# 🔧 Part 1 — Creating a Custom Bridge Network
+# Part 1 — Creating a Custom Bridge Network
 
 Create a user-defined bridge network which provides automatic DNS resolution and network isolation between containers.
 
@@ -99,7 +99,7 @@ User-defined bridge networks provide:
 
 ---
 
-# 🐳 Part 2 — Running Containers Inside Custom Network
+# Part 2 — Running Containers Inside Custom Network
 
 Deploy a web server container inside the custom network.
 
@@ -125,7 +125,7 @@ Both containers should appear as running.
 
 ---
 
-# 🔗 Part 3 — Container-to-Container Communication
+# Part 3 — Container-to-Container Communication
 
 Verify that containers inside the same network can communicate using container names.
 
@@ -153,7 +153,7 @@ This confirms that Docker's internal DNS successfully resolves the container nam
 
 ---
 
-# 🐝 Part 4 — Docker Swarm Initialization
+# Part 4 — Docker Swarm Initialization
 
 Docker Swarm enables clustering and orchestration of containers.
 
@@ -180,7 +180,7 @@ Swarm mode is now active.
 
 ---
 
-# 🌐 Part 5 — Creating an Overlay Network
+# Part 5 — Creating an Overlay Network
 
 Overlay networks enable communication between containers across multiple swarm nodes.
 
@@ -204,7 +204,7 @@ Overlay networks are essential for:
 
 ---
 
-# 📦 Part 6 — Deploying Containers in Overlay Network
+# Part 6 — Deploying Containers in Overlay Network
 
 Deploy two BusyBox containers inside the overlay network.
 
@@ -228,7 +228,7 @@ Containers communicate successfully using internal IP addresses.
 
 ---
 
-# 🚀 Part 7 — Creating a Docker Service
+# Part 7 — Creating a Docker Service
 
 Docker services allow containers to be orchestrated and managed by the swarm scheduler.
 
@@ -260,7 +260,7 @@ The nginx welcome page should be displayed.
 
 ---
 
-# 📈 Part 8 — Scaling Docker Services
+# Part 8 — Scaling Docker Services
 
 Docker Swarm automatically distributes service replicas across the cluster.
 
@@ -284,7 +284,7 @@ Swarm ensures the desired state is maintained automatically.
 
 ---
 
-# 🏭 Part 9 — Creating Production Overlay Network
+# Part 9 — Creating Production Overlay Network
 
 Production environments often use separate networks for services.
 
@@ -304,7 +304,7 @@ This network can be used for large-scale service deployments.
 
 ---
 
-# 🌍 Part 10 — Macvlan Networking (Advanced)
+# Part 10 — Macvlan Networking (Advanced)
 
 Macvlan networks allow containers to receive real IP addresses from the LAN.
 
@@ -335,7 +335,7 @@ Macvlan typically works only on native Linux installations.
 
 ---
 
-# 📊 Docker Networking Driver Comparison
+# Docker Networking Driver Comparison
 
 | Driver | Scope | Primary Purpose | Characteristics |
 |------|------|------|------|
@@ -346,7 +346,7 @@ Macvlan typically works only on native Linux installations.
 
 ---
 
-# 🧪 Experimental Results
+# Experimental Results
 
 - Custom bridge network successfully created
 - Containers communicated using Docker DNS
@@ -361,7 +361,7 @@ Macvlan typically works only on native Linux installations.
 
 ---
 
-# 📘 Key Observations
+# Key Observations
 
 - User-defined bridge networks provide automatic DNS resolution.
 - Overlay networks enable distributed container communication.
@@ -372,7 +372,7 @@ Macvlan typically works only on native Linux installations.
 
 ---
 
-# 🏁 Conclusion
+# Conclusion
 
 This lab demonstrated Docker networking concepts ranging from simple container communication to advanced orchestration networking.
 
