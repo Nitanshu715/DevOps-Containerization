@@ -1,16 +1,15 @@
-# 🚀 Class Practical — 4 February
 ## Docker Engine Configuration & Client–Server Architecture (Windows)
 
 ---
 
-## 📌 Overview
+## Overview
 
 This practical demonstrates Docker Engine verification, daemon architecture understanding, and secure client-server communication using Docker Desktop on Windows.
 It includes validation of Docker CLI connectivity, context inspection, container execution, and architectural analysis of Docker's internal communication model.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Verify Docker installation and Engine status
 - Understand Docker Client–Server architecture
@@ -22,7 +21,7 @@ It includes validation of Docker CLI connectivity, context inspection, container
 
 ---
 
-## 🛠 Tools & Technologies Used
+## Tools & Technologies Used
 
 - Windows 11
 - Docker Desktop v29.x
@@ -33,7 +32,7 @@ It includes validation of Docker CLI connectivity, context inspection, container
 
 ---
 
-## 🧠 Docker Architecture Concept
+## Docker Architecture Concept
 
 Docker follows a Client–Server model:
 
@@ -47,7 +46,7 @@ Unlike Linux/macOS, direct TCP exposure (port 2375) is restricted by Docker Desk
 
 ---
 
-## 🔎 Step 1: Verify Docker Installation
+## Step 1: Verify Docker Installation
 
 ```cmd
 docker --version
@@ -56,7 +55,7 @@ docker info
 
 ---
 
-## 🔄 Step 2: Check Docker Context
+## Step 2: Check Docker Context
 
 ```cmd
 docker context ls
@@ -70,7 +69,7 @@ docker context use desktop-linux
 
 ---
 
-## 📦 Step 3: List Containers
+## Step 3: List Containers
 
 Running Containers:
 
@@ -86,7 +85,7 @@ docker ps -a
 
 ---
 
-## 🗂 Step 4: List Images
+## Step 4: List Images
 
 ```cmd
 docker images
@@ -94,7 +93,7 @@ docker images
 
 ---
 
-## 🔍 Step 5: Validate Daemon Connectivity
+## Step 5: Validate Daemon Connectivity
 
 Docker CLI communicates with daemon using Named Pipe:
 
@@ -107,7 +106,7 @@ Successful execution confirms daemon connectivity.
 
 ---
 
-## 🐳 Step 6: Deploy Sample Container
+## Step 6: Deploy Sample Container
 
 ```cmd
 docker run hello-world
@@ -122,7 +121,7 @@ This confirms:
 
 ---
 
-## 🔐 Security Note
+## Security Note
 
 Docker Desktop does not expose TCP 2375 by default due to security risks.
 
@@ -139,7 +138,7 @@ Modern DevOps environments use:
 
 ---
 
-## 📁 GitHub Integration
+## GitHub Integration
 
 ```cmd
 cd ..
@@ -150,7 +149,7 @@ git push
 
 ---
 
-## ✅ Result
+## Result
 
 - Docker Engine verified successfully
 - Client–Server architecture understood
@@ -160,7 +159,7 @@ git push
 
 ---
 
-## 📘 Conclusion
+## Conclusion
 
 This lab provided in-depth understanding of Docker Engine internals, daemon communication, and secure architecture practices in Windows-based environments.
 It highlights real-world DevOps considerations when working with container runtimes and remote API configurations.
