@@ -1,16 +1,15 @@
-# 🚀 Class Practical — 27 January
 ## Docker Volumes, Persistent Storage & Image Lifecycle Management (Windows Environment)
 
 ---
 
-## 📌 Overview
+## Overview
 
 This practical session focuses on understanding Docker persistent storage mechanisms and complete image lifecycle management.  
 The lab demonstrates Docker volume creation, bind mounts, stateful container setup, container-to-image conversion, image backup, removal, restoration, and layer inspection using Docker Desktop on Windows.
 
 ---
 
-## 🛠 Tools & Technologies Used
+## Tools & Technologies Used
 
 - Windows 11
 - Docker Desktop
@@ -21,11 +20,11 @@ The lab demonstrates Docker volume creation, bind mounts, stateful container set
 
 ---
 
-# 🧱 PART A — Docker Volumes & Persistent Storage
+# PART A — Docker Volumes & Persistent Storage
 
 ---
 
-## 🔹 Step 1: Create a Docker Volume
+## Step 1: Create a Docker Volume
 
 ```cmd
 docker volume create myvolume
@@ -34,7 +33,7 @@ docker volume ls
 
 ---
 
-## 🔹 Step 2: Run Ubuntu Container with Volume
+## Step 2: Run Ubuntu Container with Volume
 
 ```cmd
 docker run -it -v myvolume:/data ubuntu bash
@@ -51,7 +50,7 @@ exit
 
 ---
 
-## 🔹 Step 3: Verify Data Persistence
+## Step 3: Verify Data Persistence
 
 ```cmd
 docker run -it -v myvolume:/data ubuntu bash
@@ -67,7 +66,7 @@ exit
 
 ---
 
-## 🔹 Step 4: Bind Mount Example (Host Directory)
+## Step 4: Bind Mount Example (Host Directory)
 
 ```cmd
 mkdir C:\dockerdata
@@ -90,11 +89,11 @@ dir C:\dockerdata
 
 ---
 
-# 🧊 PART B — Custom Image Creation & Lifecycle
+# PART B — Custom Image Creation & Lifecycle
 
 ---
 
-## 🔹 Step 5: Run Ubuntu Container
+## Step 5: Run Ubuntu Container
 
 ```cmd
 docker run -it --name java_container ubuntu bash
@@ -111,7 +110,7 @@ exit
 
 ---
 
-## 🔹 Step 6: Commit Container into Image
+## Step 6: Commit Container into Image
 
 ```cmd
 docker commit java_container myrepo/java-img
@@ -120,7 +119,7 @@ docker images
 
 ---
 
-## 🔹 Step 7: Run Custom Image
+## Step 7: Run Custom Image
 
 ```cmd
 docker run -it myrepo/java-img bash
@@ -135,7 +134,7 @@ exit
 
 ---
 
-## 🔹 Step 8: Save Image as Backup (.tar)
+## Step 8: Save Image as Backup (.tar)
 
 ```cmd
 docker save -o java-image-backup.tar myrepo/java-img
@@ -144,7 +143,7 @@ dir java-image-backup.tar
 
 ---
 
-## 🔹 Step 9: Remove Docker Image
+## Step 9: Remove Docker Image
 
 ```cmd
 docker rmi myrepo/java-img
@@ -153,7 +152,7 @@ docker images
 
 ---
 
-## 🔹 Step 10: Restore Image
+## Step 10: Restore Image
 
 ```cmd
 docker load -i java-image-backup.tar
@@ -162,7 +161,7 @@ docker images
 
 ---
 
-## 🔹 Step 11: Inspect Image History
+## Step 11: Inspect Image History
 
 ```cmd
 docker history myrepo/java-img
@@ -170,7 +169,7 @@ docker history myrepo/java-img
 
 ---
 
-# 🔗 GitHub Version Control Setup
+# GitHub Version Control Setup
 
 ```cmd
 cd DevOps-Lab-Assignments
@@ -181,7 +180,7 @@ notepad README.md
 
 ---
 
-## 🚀 Initialize Git & Push to GitHub
+## Initialize Git & Push to GitHub
 
 ```cmd
 cd ..
@@ -192,7 +191,7 @@ git push
 
 ---
 
-# ✅ Result
+# Result
 
 - Docker volume successfully created and verified.
 - Persistent storage confirmed using volume mounts.
@@ -204,7 +203,7 @@ git push
 
 ---
 
-# 🎯 Conclusion
+# Conclusion
 
 This lab demonstrates stateful container management using Docker volumes and bind mounts, along with full Docker image lifecycle operations including commit, save, remove, load, and history inspection.  
 It validates Docker’s capability to manage persistence, portability, and recovery in DevOps environments.
