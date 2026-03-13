@@ -1,9 +1,8 @@
-# 🚀 Class Practical — 28 January
 ## Docker Experiment: Containerizing a Java Application (Windows Environment)
 
 ---
 
-## 📌 Overview
+## Overview
 
 This practical session demonstrates how to containerize a simple Java application using Docker.
 The experiment covers writing a Dockerfile, building a custom image, running a container, and verifying successful execution.
@@ -11,13 +10,13 @@ The objective is to understand how Docker packages applications along with their
 
 ---
 
-## 🎯 Aim
+## Aim
 
 To create a Docker image for a Java application using a Dockerfile, build the image, and execute it successfully inside a container.
 
 ---
 
-## 🛠 Tools & Technologies Used
+## Tools & Technologies Used
 
 - Windows 11
 - Docker Desktop
@@ -28,7 +27,7 @@ To create a Docker image for a Java application using a Dockerfile, build the im
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 Class Practical 28 Jan/
 │
@@ -38,7 +37,7 @@ Class Practical 28 Jan/
 
 ---
 
-## 💻 Java Source Code (Hello.java)
+## Java Source Code (Hello.java)
 
 ```java
 public class Hello {
@@ -50,7 +49,7 @@ public class Hello {
 
 ---
 
-## 🐳 Dockerfile Configuration
+## Dockerfile Configuration
 
 ```dockerfile
 FROM ubuntu:22.04
@@ -68,9 +67,9 @@ CMD ["java", "Hello"]
 
 ---
 
-## ⚙ Step-by-Step Execution
+## Step-by-Step Execution
 
-### 1️⃣ Build Docker Image
+### Build Docker Image
 
 ```cmd
 docker build -t java-app:1.0 .
@@ -84,7 +83,7 @@ Explanation:
 
 ---
 
-### 2️⃣ Verify Image Creation
+### Verify Image Creation
 
 ```cmd
 docker images
@@ -92,7 +91,7 @@ docker images
 
 ---
 
-### 3️⃣ Run the Container
+### Run the Container
 
 ```cmd
 docker run java-app:1.0
@@ -106,7 +105,7 @@ Hello, Docker!
 
 ---
 
-## 🔍 Key Docker Concepts Demonstrated
+## Key Docker Concepts Demonstrated
 
 - Base Image Selection
 - Layered Image Architecture
@@ -118,7 +117,7 @@ Hello, Docker!
 
 ---
 
-## ✅ Result
+## Result
 
 - Successfully created a Docker image containing a Java program.
 - Image built without errors.
@@ -127,7 +126,7 @@ Hello, Docker!
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
 This experiment illustrates how Docker encapsulates an application along with its runtime and dependencies into a portable image.
 By containerizing the Java program, we ensured environment consistency, simplified deployment, and improved application portability across systems.
