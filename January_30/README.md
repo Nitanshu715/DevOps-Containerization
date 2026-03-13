@@ -1,15 +1,14 @@
-# 🚀 Class Practical — 30 January  
 ## Dockerfile Creation & Custom Image Building (Windows Environment)
 
 ---
 
-## 📌 Overview
+## Overview
 
 This practical session demonstrates the complete workflow of creating, building, managing, exporting, importing, and deploying a custom Docker image using a Dockerfile. The experiment focuses on understanding Dockerfile instructions, Docker image layering architecture, and application containerization using Java.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Understand Dockerfile syntax and core instructions
 - Create a custom Docker image using Ubuntu base
@@ -22,7 +21,7 @@ This practical session demonstrates the complete workflow of creating, building,
 
 ---
 
-## 🛠 Tools & Technologies Used
+## Tools & Technologies Used
 
 - Operating System: Windows 11
 - Docker Desktop (Windows)
@@ -34,7 +33,7 @@ This practical session demonstrates the complete workflow of creating, building,
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 Class Practical 30 Jan/
 │
@@ -45,7 +44,7 @@ Class Practical 30 Jan/
 
 ---
 
-## 🧑‍💻 Java Application Source Code
+## Java Application Source Code
 
 ```java
 public class Hello {
@@ -57,7 +56,7 @@ public class Hello {
 
 ---
 
-## 🐳 Dockerfile Configuration
+## Dockerfile Configuration
 
 ```dockerfile
 # Base Image
@@ -81,7 +80,7 @@ CMD ["java", "Hello"]
 
 ---
 
-## 🏗 Build Docker Image
+## Build Docker Image
 
 ```cmd
 docker build -t java-app:1.0 .
@@ -95,7 +94,7 @@ docker images
 
 ---
 
-## ▶ Run Container from Image
+## Run Container from Image
 
 ```cmd
 docker run java-app:1.0
@@ -107,7 +106,7 @@ Hello from Java inside Docker on Windows!
 
 ---
 
-## 📦 Manage Containers & Images
+## Manage Containers & Images
 
 List containers:
 
@@ -129,7 +128,7 @@ docker rmi java-app:1.0
 
 ---
 
-## 💾 Export Docker Image
+## Export Docker Image
 
 ```cmd
 docker save -o java-app.tar java-app:1.0
@@ -137,7 +136,7 @@ docker save -o java-app.tar java-app:1.0
 
 ---
 
-## 🔄 Load Docker Image
+## Load Docker Image
 
 ```cmd
 docker load -i java-app.tar
@@ -145,7 +144,7 @@ docker load -i java-app.tar
 
 ---
 
-## ☁ Push Image to Docker Hub
+## Push Image to Docker Hub
 
 Login:
 
@@ -167,7 +166,7 @@ docker push YOUR_DOCKERHUB_USERNAME/java-app:1.0
 
 ---
 
-## 🧠 Understanding Docker Layer Architecture
+## Understanding Docker Layer Architecture
 
 - Each Dockerfile instruction creates a new immutable layer.
 - Layers are cached for faster rebuilds.
@@ -177,7 +176,7 @@ docker push YOUR_DOCKERHUB_USERNAME/java-app:1.0
 
 ---
 
-## 🔁 DevOps Application Packaging Workflow
+## DevOps Application Packaging Workflow
 
 1. Write application source code.
 2. Define environment using Dockerfile.
@@ -189,7 +188,7 @@ docker push YOUR_DOCKERHUB_USERNAME/java-app:1.0
 
 ---
 
-## ✅ Result
+## Result
 
 - Custom Docker image successfully built.
 - Java application containerized and executed.
@@ -199,7 +198,7 @@ docker push YOUR_DOCKERHUB_USERNAME/java-app:1.0
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
 This experiment provided practical understanding of Dockerfile-based image creation, container execution, and DevOps application packaging workflows. It demonstrated how Docker ensures environment consistency, portability, and scalable deployment through containerization.
 
