@@ -2,7 +2,7 @@
 
 ---
 
-# 📌 DevOps Practical Overview
+# DevOps Practical Overview
 
 This practical demonstrates how containerized applications can be executed dynamically using Docker volume mounting.  
 Instead of rebuilding a Docker image every time the application code changes, the source code from the host machine is mounted directly inside the running container.
@@ -13,7 +13,7 @@ This concept represents a **real-world DevOps development workflow**, where cont
 
 ---
 
-# 🎯 Objectives
+# Objectives
 
 - Build a Docker image using the official **GCC base image**
 - Execute a **C program inside a Docker container**
@@ -27,7 +27,7 @@ This concept represents a **real-world DevOps development workflow**, where cont
 
 ---
 
-# 🧰 Technologies Used
+# Technologies Used
 
 | Technology | Description |
 |------------|-------------|
@@ -41,7 +41,7 @@ This concept represents a **real-world DevOps development workflow**, where cont
 
 ---
 
-# 📁 Project Directory Structure
+# Project Directory Structure
 
 ```
 Class Practical 6 Feb
@@ -52,7 +52,7 @@ Class Practical 6 Feb
 
 ---
 
-# 🧾 Application Description
+# Application Description
 
 This application asks the user to enter their SAP ID continuously.
 
@@ -67,7 +67,7 @@ The program continues running indefinitely until the container is manually stopp
 
 ---
 
-# 💻 C Application Source Code (app.c)
+# C Application Source Code (app.c)
 
 ```c
 #include <stdio.h>
@@ -98,7 +98,7 @@ int main() {
 
 ---
 
-# 🐳 Dockerfile Configuration
+# Dockerfile Configuration
 
 The Dockerfile defines how the container environment should be built.
 
@@ -116,7 +116,7 @@ CMD ["bash", "-c", "gcc app.c -o app && ./app"]
 
 ---
 
-# 🔨 Step 1 — Build Docker Image
+# Step 1 — Build Docker Image
 
 Navigate to the project directory and build the image.
 
@@ -132,7 +132,7 @@ This command:
 
 ---
 
-# 🔍 Step 2 — Verify Docker Image
+# Step 2 — Verify Docker Image
 
 ```
 docker images
@@ -149,7 +149,7 @@ This confirms the Docker image was successfully built.
 
 ---
 
-# 🔗 Step 3 — Run Container Using Volume Mount
+# Step 3 — Run Container Using Volume Mount
 
 Now we mount the host application file inside the container.
 
@@ -182,7 +182,7 @@ Any change to `app.c` on the host system will immediately reflect inside the con
 
 ---
 
-# ⚙️ Runtime Execution
+# Runtime Execution
 
 Once the container starts, the following command runs automatically:
 
@@ -199,7 +199,7 @@ Steps performed inside container:
 
 ---
 
-# 🧪 Program Execution Example
+# Program Execution Example
 
 ### Incorrect SAP ID
 
@@ -219,7 +219,7 @@ The application continues running due to the infinite loop.
 
 ---
 
-# 🛑 Stopping the Container
+# Stopping the Container
 
 To stop execution:
 
@@ -231,7 +231,7 @@ This terminates the container process.
 
 ---
 
-# 📦 Docker Concepts Demonstrated
+# Docker Concepts Demonstrated
 
 • Official Docker Base Image  
 • Containerized Compilation  
@@ -244,7 +244,7 @@ This terminates the container process.
 
 ---
 
-# 🔁 Development Workflow Demonstrated
+# Development Workflow Demonstrated
 
 Traditional Workflow
 
@@ -266,7 +266,7 @@ This significantly improves developer productivity.
 
 ---
 
-# 🌍 Real‑World DevOps Relevance
+# Real‑World DevOps Relevance
 
 This technique is commonly used in:
 
@@ -280,7 +280,7 @@ Developers often mount source code directly inside containers to test applicatio
 
 ---
 
-# ✅ Result
+# Result
 
 Successfully executed a C application inside a Docker container using volume mounting and continuous runtime execution.
 
@@ -288,7 +288,7 @@ The application compiled and ran inside the container while reading the source f
 
 ---
 
-# 📚 Conclusion
+# Conclusion
 
 This practical demonstrated how Docker can be used to run and test applications dynamically using volume mounts.  
 Instead of embedding the source code inside the container image, the program was executed using files mounted from the host system.
