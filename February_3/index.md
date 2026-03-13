@@ -1,4 +1,3 @@
-# Class Practical — 3 February
 ## Docker Installation Verification & Nginx Deployment (Windows)
 
 ---
