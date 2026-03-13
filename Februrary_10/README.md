@@ -2,19 +2,19 @@
 
 ---
 
-# 📌 Overview
+# Overview
 
 This practical demonstrates **real-world DevOps container development workflows** using Docker.  
 The objective is to understand how modern production containers are built using **multi-stage builds**, **minimal runtime environments**, and **secure container execution**.
 
 Two different containerized applications are implemented:
 
-1️⃣ **C Application Containerization**
+1️ **C Application Containerization**
 - Static binary compilation
 - Multi-stage Docker build
 - Ultra‑small runtime container using **scratch image**
 
-2️⃣ **Java Application Containerization**
+2️ **Java Application Containerization**
 - Maven-based build system
 - Multi-stage Docker build
 - Secure runtime container using **non-root user**
@@ -24,7 +24,7 @@ These techniques are commonly used in **enterprise DevOps pipelines, microservic
 
 ---
 
-# 🧱 Technologies Used
+# Technologies Used
 
 | Technology | Purpose |
 |-----------|--------|
@@ -41,7 +41,7 @@ These techniques are commonly used in **enterprise DevOps pipelines, microservic
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```
 Class Practical 10 Feb
@@ -65,9 +65,9 @@ Class Practical 10 Feb
 
 ---
 
-# 🧪 PART 1 — Containerized C Application
+# PART 1 — Containerized C Application
 
-## 🎯 Objective
+## Objective
 
 The objective of this experiment is to containerize a **C program** using Docker and optimize the final image using a **multi-stage build process**.
 
@@ -80,7 +80,7 @@ Key concepts demonstrated:
 
 ---
 
-# 💻 C Program (hello.c)
+# C Program (hello.c)
 
 ```c
 #include <stdio.h>
@@ -110,7 +110,7 @@ int main() {
 
 ---
 
-# 🐳 Dockerfile — Multi‑Stage Build
+# Dockerfile — Multi‑Stage Build
 
 ```dockerfile
 # -------- Stage 1 : Builder --------
@@ -135,7 +135,7 @@ CMD ["/hello"]
 
 ---
 
-# ⚙️ Build Docker Image
+# Build Docker Image
 
 ```
 docker build -t sapid-checker .
@@ -151,7 +151,7 @@ Docker performs the following internally:
 
 ---
 
-# ▶ Run Container
+# Run Container
 
 ```
 docker run -it sapid-checker
@@ -167,7 +167,7 @@ Matched
 
 ---
 
-# 📦 Verify Image Size
+# Verify Image Size
 
 ```
 docker images
@@ -183,7 +183,7 @@ This proves that **multi-stage builds drastically reduce container size**.
 
 ---
 
-# 🧠 Concepts Demonstrated
+# Concepts Demonstrated
 
 - Multi‑Stage Docker Builds
 - Builder Pattern
@@ -194,9 +194,9 @@ This proves that **multi-stage builds drastically reduce container size**.
 
 ---
 
-# ☕ PART 2 — Java Multi‑Stage Container
+# PART 2 — Java Multi‑Stage Container
 
-## 🎯 Objective
+## Objective
 
 The objective of this experiment is to build a **Java application container** using a multi-stage Docker workflow.
 
@@ -214,7 +214,7 @@ The container separates:
 
 ---
 
-# 📂 Java Project Structure
+# Java Project Structure
 
 ```
 java-multistage-container
@@ -231,7 +231,7 @@ java-multistage-container
 
 ---
 
-# ☕ Java Application
+# Java Application
 
 ```java
 package com.example;
@@ -249,7 +249,7 @@ public class HelloWorld {
 
 ---
 
-# ⚙️ Maven Configuration (pom.xml)
+# Maven Configuration (pom.xml)
 
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -307,7 +307,7 @@ public class HelloWorld {
 
 ---
 
-# 🐳 Multi‑Stage Dockerfile
+# Multi‑Stage Dockerfile
 
 ```dockerfile
 # -------- Stage 1 : Builder --------
@@ -337,7 +337,7 @@ CMD ["java", "-jar", "app.jar"]
 
 ---
 
-# ⚙️ Build Java Container
+# Build Java Container
 
 ```
 docker build -t java-multistage-app .
@@ -345,7 +345,7 @@ docker build -t java-multistage-app .
 
 ---
 
-# ▶ Run Container
+# Run Container
 
 ```
 docker run java-multistage-app
@@ -359,7 +359,7 @@ Hello from MultiStage Docker Java Container!
 
 ---
 
-# 🔍 Docker Image Layer Analysis
+# Docker Image Layer Analysis
 
 ```
 docker history java-multistage-app
@@ -373,7 +373,7 @@ Observation:
 
 ---
 
-# 🧠 Key Docker Concepts Demonstrated
+# Key Docker Concepts Demonstrated
 
 - Multi‑Stage Docker Builds
 - Builder vs Runtime Environment Separation
@@ -385,7 +385,7 @@ Observation:
 
 ---
 
-# 🎓 Learning Outcomes
+# Learning Outcomes
 
 After completing this practical:
 
@@ -397,7 +397,7 @@ After completing this practical:
 
 ---
 
-# ✅ Result
+# Result
 
 Successfully implemented optimized Docker containers for:
 
@@ -408,7 +408,7 @@ Both containers demonstrate **real-world DevOps container optimization technique
 
 ---
 
-# 🏁 Conclusion
+# Conclusion
 
 This practical demonstrates how multi-stage Docker builds enable developers to separate build dependencies from runtime environments. By compiling applications in builder containers and deploying only compiled artifacts into minimal runtime images, it is possible to create **secure, lightweight, and production-ready containers** suitable for scalable cloud infrastructure.
 
