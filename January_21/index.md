@@ -1,15 +1,14 @@
-# 🚀 Class Practical — 21 January
 ## DevOps Fundamentals & Setup (Windows Environment)
 
 ---
 
-## 📌 Overview
+## Overview
 
 This practical session focuses on understanding the foundational concepts of DevOps and containerization using Docker Desktop on Windows. The lab demonstrates Docker installation verification, container execution, Linux interaction inside Docker, and package management differences between Windows and Linux.
 
 ---
 
-## 🛠 Tools & Technologies Used
+## Tools & Technologies Used
 
 - Windows 11
 - Docker Desktop
@@ -19,7 +18,7 @@ This practical session focuses on understanding the foundational concepts of Dev
 
 ---
 
-## 🔎 Step 1: Verify Docker Installation
+## Step 1: Verify Docker Installation
 
 ```cmd
 docker --version
@@ -28,7 +27,7 @@ docker info
 
 ---
 
-## 🐳 Step 2: Run Docker Test Container
+## Step 2: Run Docker Test Container
 
 ```cmd
 docker run hello-world
@@ -36,7 +35,7 @@ docker run hello-world
 
 ---
 
-## 💻 Step 3: Windows Package Manager (Comparison)
+## Step 3: Windows Package Manager (Comparison)
 
 ```cmd
 winget upgrade
@@ -44,7 +43,7 @@ winget upgrade
 
 ---
 
-## 🐧 Step 4: Run Ubuntu Container Interactively
+## Step 4: Run Ubuntu Container Interactively
 
 ```cmd
 docker run -it ubuntu bash
@@ -52,7 +51,7 @@ docker run -it ubuntu bash
 
 ---
 
-## 📦 Step 5: Update Packages Inside Ubuntu Container
+## Step 5: Update Packages Inside Ubuntu Container
 
 ```bash
 apt update
@@ -62,7 +61,7 @@ exit
 
 ---
 
-## 📁 GitHub Version Control Setup
+## GitHub Version Control Setup
 
 ```cmd
 mkdir DevOps-Lab-Assignments
@@ -74,7 +73,7 @@ notepad README.md
 
 ---
 
-## 🔗 Initialize Git & Push to GitHub
+## Initialize Git & Push to GitHub
 
 ```cmd
 cd ..
@@ -88,7 +87,7 @@ git push -u origin main
 
 ---
 
-## ✅ Result
+## Result
 
 - Docker successfully installed and verified.
 - hello-world container executed successfully.
@@ -98,7 +97,7 @@ git push -u origin main
 
 ---
 
-## 🎯 Conclusion
+## Conclusion
 
 This lab establishes a strong foundation in Docker-based containerization and DevOps workflow setup using Windows. It demonstrates how Linux environments can be simulated inside Windows using Docker, enabling consistent development and deployment environments.
 
