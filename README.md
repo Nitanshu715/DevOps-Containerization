@@ -532,5 +532,4 @@ making this repository suitable for **academic evaluation** as well as **portfol
 This repository is not just a lab submission —  
 it is a **foundation for real DevOps engineering practices**.
 
-Build it. Improve it. Ship it. 🚀
-
+Build it. Improve it. Ship it. 
