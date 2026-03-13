@@ -400,7 +400,7 @@ This lab focused on understanding Docker networking from basic container communi
 Link:
 [Class Practical 20 Feb](./Februrary_20/)
 
-# Class Practical — 23 February (Docker Image Management & Container Lifecycle)
+### Class Practical — 23 February (Docker Image Management & Container Lifecycle)
 This class practical demonstrated the fundamental concepts of Docker image management and container lifecycle operations.
 - Docker images can be pulled from Docker Hub repositories.
 - Containers can be created and executed from Docker images.
