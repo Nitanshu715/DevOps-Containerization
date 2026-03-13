@@ -2,7 +2,7 @@
 
 ---
 
-# 📘 Overview
+# Overview
 
 This practical demonstrates how Docker Compose can be used to deploy and scale services in a multi-container environment.  
 The experiment involves deploying a WordPress application backed by a MySQL database and then scaling the WordPress service using Docker Compose.
@@ -12,7 +12,7 @@ With the `--scale` option, developers can easily replicate containers to simulat
 
 ---
 
-# 🎯 Objective
+# Objective
 
 - Deploy a multi-container WordPress application
 - Use Docker Compose for container orchestration
@@ -24,7 +24,7 @@ With the `--scale` option, developers can easily replicate containers to simulat
 
 ---
 
-# 🧰 Technologies Used
+# Technologies Used
 
 - Docker Desktop
 - Docker Compose
@@ -35,7 +35,7 @@ With the `--scale` option, developers can easily replicate containers to simulat
 
 ---
 
-# 🖥️ System Configuration
+# System Configuration
 
 | Component | Details |
 |----------|--------|
@@ -47,7 +47,7 @@ With the `--scale` option, developers can easily replicate containers to simulat
 
 ---
 
-# 📁 Project Directory Structure
+# Project Directory Structure
 
 ```
 compose-scaling-26feb/
@@ -59,7 +59,7 @@ compose-scaling-26feb/
 
 ---
 
-# ⚙️ Step 1 — Create Project Directory
+# Step 1 — Create Project Directory
 
 ```cmd
 mkdir DevOps-Labs
@@ -70,7 +70,7 @@ cd compose-scaling-26feb
 
 ---
 
-# ⚙️ Step 2 — Create docker-compose.yml File
+# Step 2 — Create docker-compose.yml File
 
 ```cmd
 notepad docker-compose.yml
@@ -119,7 +119,7 @@ networks:
 
 ---
 
-# 🐳 Step 3 — Start the Containers
+# Step 3 — Start the Containers
 
 ```cmd
 docker compose up -d
@@ -135,7 +135,7 @@ This command:
 
 ---
 
-# 🔍 Step 4 — Verify Running Containers
+# Step 4 — Verify Running Containers
 
 ```cmd
 docker ps
@@ -152,7 +152,7 @@ This confirms both containers are running successfully.
 
 ---
 
-# 🌐 Step 5 — Access WordPress Application
+# Step 5 — Access WordPress Application
 
 Open your browser and visit:
 
@@ -164,7 +164,7 @@ This launches the WordPress setup page.
 
 ---
 
-# 📈 Step 6 — Scale WordPress Containers
+# Step 6 — Scale WordPress Containers
 
 Docker Compose allows services to be replicated.
 
@@ -186,7 +186,7 @@ All containers connect to the same MySQL database.
 
 ---
 
-# 🔎 Step 7 — Verify Scaling
+# Step 7 — Verify Scaling
 
 ```cmd
 docker ps
@@ -205,7 +205,7 @@ This confirms that multiple WordPress instances are running.
 
 ---
 
-# 🌐 Step 8 — Inspect Docker Networks
+# Step 8 — Inspect Docker Networks
 
 ```cmd
 docker network ls
@@ -221,7 +221,7 @@ compose-scaling-26feb_wordpress-network
 
 ---
 
-# 💾 Step 9 — Inspect Docker Volumes
+# Step 9 — Inspect Docker Volumes
 
 ```cmd
 docker volume ls
@@ -238,7 +238,7 @@ Volumes ensure persistent storage even if containers are removed.
 
 ---
 
-# 🛑 Step 10 — Stop and Remove Containers
+# Step 10 — Stop and Remove Containers
 
 ```cmd
 docker compose down
@@ -254,7 +254,7 @@ Volumes remain unless manually deleted.
 
 ---
 
-# 🔗 GitHub Version Control
+# GitHub Version Control
 
 Initialize Git repository:
 
@@ -284,7 +284,7 @@ git push -u origin main
 
 ---
 
-# 📊 Observations
+# Observations
 
 - Docker Compose created containers automatically
 - Containers were connected using a custom bridge network
@@ -294,7 +294,7 @@ git push -u origin main
 
 ---
 
-# 🧠 Key Concepts Learned
+# Key Concepts Learned
 
 - Multi-container architecture
 - Docker Compose orchestration
@@ -305,7 +305,7 @@ git push -u origin main
 
 ---
 
-# ✅ Result
+# Result
 
 The WordPress service was successfully deployed and scaled to multiple instances using Docker Compose.
 
@@ -313,7 +313,7 @@ Multiple containers were created and connected to the same MySQL database throug
 
 ---
 
-# 🏁 Conclusion
+# Conclusion
 
 This experiment demonstrated the power of Docker Compose in orchestrating multi-container applications.  
 By using a single configuration file, developers can deploy complex application architectures and scale services efficiently.
