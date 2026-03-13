@@ -2,7 +2,7 @@
 
 ---
 
-# 📌 DevOps Storage Practical
+# DevOps Storage Practical
 
 This practical demonstrates Docker storage architecture, persistent data management,
 bind mounts, volume lifecycle, backup strategies, and disaster recovery workflows
@@ -28,7 +28,7 @@ This lab covers:
 
 ---
 
-# 🧰 Technologies Used
+# Technologies Used
 
 Docker Desktop  
 Docker CLI  
@@ -43,7 +43,7 @@ GitHub Repository Hosting
 
 ---
 
-# 🧠 Key DevOps Concepts Covered
+# Key DevOps Concepts Covered
 
 Docker Storage Drivers  
 Container Writable Layer  
@@ -60,7 +60,7 @@ Container Storage Disaster Recovery
 
 ---
 
-# 📂 Repository Structure
+# Repository Structure
 
 ```
 DevOps-Lab-Assignments
@@ -83,7 +83,7 @@ DevOps-Lab-Assignments
 
 ---
 
-# 🔎 PART 1 — Docker Environment Verification
+# PART 1 — Docker Environment Verification
 
 Verify Docker installation and runtime environment.
 
@@ -104,7 +104,7 @@ Volume list should display existing volumes.
 
 ---
 
-# 📦 PART 2 — Create Named Docker Volume
+# PART 2 — Create Named Docker Volume
 
 Named volumes are managed by Docker and provide persistent storage
 outside the container filesystem.
@@ -127,7 +127,7 @@ local    devops_volume
 
 ---
 
-# 🐳 PART 3 — Run Container Using Named Volume
+# PART 3 — Run Container Using Named Volume
 
 Run Ubuntu container and mount the named volume.
 
@@ -151,7 +151,7 @@ Launch interactive shell
 
 ---
 
-# 📄 PART 4 — Write Data Inside Volume
+# PART 4 — Write Data Inside Volume
 
 Inside container
 
@@ -174,7 +174,7 @@ file2.txt
 
 ---
 
-# 🔁 PART 5 — Exit Container and Remove It
+# PART 5 — Exit Container and Remove It
 
 ```
 exit
@@ -193,7 +193,7 @@ This proves persistent storage independent from container lifecycle.
 
 ---
 
-# 🔍 PART 6 — Verify Data Persistence
+# PART 6 — Verify Data Persistence
 
 Run container again using same volume
 
@@ -228,7 +228,7 @@ exit
 
 ---
 
-# 📁 PART 7 — Bind Mount Implementation
+# PART 7 — Bind Mount Implementation
 
 Bind mounts map a host directory directly to a container directory.
 
@@ -256,7 +256,7 @@ exit
 
 ---
 
-# 🔎 Verify File On Host
+# Verify File On Host
 
 Navigate to host folder
 
@@ -280,7 +280,7 @@ This confirms real-time host ↔ container file sharing.
 
 ---
 
-# 💾 PART 8 — Volume Backup Using TAR
+# PART 8 — Volume Backup Using TAR
 
 Create backup directory
 
@@ -313,7 +313,7 @@ Archive contents of volume
 
 ---
 
-# 📂 Verify Backup File
+# Verify Backup File
 
 ```
 dir backup
@@ -327,7 +327,7 @@ volume_backup.tar.gz
 
 ---
 
-# ⚠️ PART 9 — Simulate Production Data Loss
+# PART 9 — Simulate Production Data Loss
 
 Delete Docker volume
 
@@ -339,7 +339,7 @@ This simulates a production storage failure scenario.
 
 ---
 
-# 🔄 PART 10 — Recreate Docker Volume
+# PART 10 — Recreate Docker Volume
 
 ```
 docker volume create devops_volume
@@ -347,7 +347,7 @@ docker volume create devops_volume
 
 ---
 
-# ♻️ PART 11 — Restore Volume From Backup
+# PART 11 — Restore Volume From Backup
 
 ```
 docker run --rm -v devops_volume:/volume -v %cd%/backup:/backup alpine tar xzf /backup/volume_backup.tar.gz -C /volume
@@ -363,7 +363,7 @@ Restore files into Docker volume
 
 ---
 
-# 🔎 PART 12 — Verify Restored Data
+# PART 12 — Verify Restored Data
 
 Run container again
 
@@ -398,7 +398,7 @@ exit
 
 ---
 
-# 🧾 PART 13 — Inspect Docker Volume Metadata
+# PART 13 — Inspect Docker Volume Metadata
 
 Inspect volume configuration
 
@@ -425,7 +425,7 @@ Scope: local
 
 ---
 
-# 📊 PART 14 — Check Backup Storage Size
+# PART 14 — Check Backup Storage Size
 
 ```
 docker run --rm -v %cd%:/data alpine du -h /data/backup
@@ -435,7 +435,7 @@ This command verifies storage consumption of the backup archive.
 
 ---
 
-# 🔐 DevOps Storage Workflow Simulation
+# DevOps Storage Workflow Simulation
 
 This practical simulates real production DevOps storage lifecycle
 
@@ -459,7 +459,7 @@ Verify Application Data
 
 ---
 
-# 🎯 Result
+# Result
 
 Docker environment verified successfully
 
@@ -483,7 +483,7 @@ Backup storage size verified
 
 ---
 
-# 📚 Learning Outcomes
+# Learning Outcomes
 
 Understanding Docker storage architecture
 
@@ -505,7 +505,7 @@ Docker volume inspection and metadata debugging
 
 ---
 
-# 🏁 Conclusion
+# Conclusion
 
 This practical demonstrates a complete DevOps container storage workflow including
 persistent storage implementation, container data management, and disaster recovery
