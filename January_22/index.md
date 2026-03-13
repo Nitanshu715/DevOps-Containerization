@@ -1,15 +1,14 @@
-# 🚀 Class Practical — 22 January
 ## Docker Basics & Container Management (Windows Environment)
 
 ---
 
-## 📌 Overview
+## Overview
 
 This practical session focuses on exploring Docker core concepts and managing containers using Docker Desktop on Windows. The lab demonstrates Docker CLI operations, image management, container lifecycle handling, monitoring, and cleanup processes in a DevOps-oriented workflow.
 
 ---
 
-## 🛠 Tools & Technologies Used
+## Tools & Technologies Used
 
 - Windows 11
 - Docker Desktop
@@ -20,7 +19,7 @@ This practical session focuses on exploring Docker core concepts and managing co
 
 ---
 
-## 🔎 Step 1: Verify Docker Client & Server Version
+## Step 1: Verify Docker Client & Server Version
 
 ```cmd
 docker version
@@ -29,7 +28,7 @@ docker info
 
 ---
 
-## 🐳 Step 2: Run Docker Test Container
+## Step 2: Run Docker Test Container
 
 ```cmd
 docker run hello-world
@@ -37,7 +36,7 @@ docker run hello-world
 
 ---
 
-## 📦 Step 3: List Available Docker Images
+## Step 3: List Available Docker Images
 
 ```cmd
 docker images
@@ -45,7 +44,7 @@ docker images
 
 ---
 
-## 📥 Step 4: Pull Ubuntu Image from Docker Hub
+## Step 4: Pull Ubuntu Image from Docker Hub
 
 ```cmd
 docker pull ubuntu
@@ -54,7 +53,7 @@ docker images
 
 ---
 
-## 🐧 Step 5: Run Ubuntu Container Interactively
+## Step 5: Run Ubuntu Container Interactively
 
 ```cmd
 docker run -it ubuntu bash
@@ -71,7 +70,7 @@ exit
 
 ---
 
-## 📊 Step 6: Monitor Containers
+## Step 6: Monitor Containers
 
 ```cmd
 docker ps
@@ -80,7 +79,7 @@ docker ps -a
 
 ---
 
-## 🔁 Step 7: Container Lifecycle Management
+## Step 7: Container Lifecycle Management
 
 ```cmd
 docker start <container_id>
@@ -90,7 +89,7 @@ docker rm <container_id>
 
 ---
 
-## 🧹 Step 8: Remove Docker Images
+## Step 8: Remove Docker Images
 
 ```cmd
 docker rmi ubuntu
@@ -98,7 +97,7 @@ docker rmi ubuntu
 
 ---
 
-## 🔗 GitHub Version Control Commands
+## GitHub Version Control Commands
 
 ```cmd
 cd DevOps-Lab-Assignments
@@ -109,7 +108,7 @@ git push
 
 ---
 
-## ✅ Result
+## Result
 
 - Docker client and server verified successfully.
 - Ubuntu image pulled from Docker Hub.
@@ -120,7 +119,7 @@ git push
 
 ---
 
-## 🎯 Conclusion
+## Conclusion
 
 This lab strengthens foundational knowledge of Docker CLI usage and container lifecycle operations. It demonstrates practical container management within a Windows environment, forming a core building block for DevOps workflows and cloud-native development practices.
 
