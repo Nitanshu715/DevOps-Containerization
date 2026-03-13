@@ -2,7 +2,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 This practical experiment explores Docker storage mechanisms and demonstrates how containerized applications can maintain persistent and temporary data. Containers are typically ephemeral, meaning that data inside them can be lost when the container stops or is removed. Docker provides multiple storage mechanisms to overcome this limitation.
 
@@ -16,7 +16,7 @@ Additionally, a **MySQL container** is used to demonstrate persistent database s
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Understand the concept of Docker storage mechanisms
 - Create and manage Docker named volumes
@@ -29,7 +29,7 @@ Additionally, a **MySQL container** is used to demonstrate persistent database s
 
 ---
 
-## 🛠 Environment Configuration
+## Environment Configuration
 
 | Component | Details |
 |----------|---------|
@@ -43,7 +43,7 @@ Additionally, a **MySQL container** is used to demonstrate persistent database s
 
 ---
 
-## 🧪 Step 1 — Verify Docker Installation
+## Step 1 — Verify Docker Installation
 
 Before performing any container operations, Docker must be verified to ensure the engine and services are running properly.
 
@@ -68,7 +68,7 @@ Successful execution confirms Docker is running correctly.
 
 ---
 
-## 📦 Step 2 — Create a Docker Named Volume
+## Step 2 — Create a Docker Named Volume
 
 Docker volumes are the recommended method for storing persistent container data.
 
@@ -100,7 +100,7 @@ local     myvolume
 
 ---
 
-## 🗄 Step 3 — Run MySQL Container with Persistent Volume
+## Step 3 — Run MySQL Container with Persistent Volume
 
 A MySQL container is launched with a mounted volume so that database data is stored persistently.
 
@@ -136,7 +136,7 @@ By mounting the volume to this directory, all database data becomes persistent.
 
 ---
 
-## 🔄 Step 4 — Container Lifecycle Management
+## Step 4 — Container Lifecycle Management
 
 To demonstrate persistence, the container is stopped and removed.
 
@@ -162,7 +162,7 @@ Even after removal, the **Docker volume still exists**.
 
 ---
 
-## 🔁 Step 5 — Recreate MySQL Container Using Same Volume
+## Step 5 — Recreate MySQL Container Using Same Volume
 
 The MySQL container is recreated using the same volume.
 
@@ -184,7 +184,7 @@ Because the same volume is mounted:
 
 ---
 
-## 🔍 Step 6 — Inspect Docker Volume
+## Step 6 — Inspect Docker Volume
 
 Docker volumes can be inspected to view internal details.
 
@@ -209,7 +209,7 @@ Typical mount location:
 
 ---
 
-## 🌐 Step 7 — Bind Mount with NGINX
+## Step 7 — Bind Mount with NGINX
 
 Bind mounts allow host directories to be directly shared with containers.
 
@@ -261,7 +261,7 @@ Any change to the host HTML file immediately updates the container output.
 
 ---
 
-## ⚡ Step 8 — tmpfs Mount (In-Memory Storage)
+## Step 8 — tmpfs Mount (In-Memory Storage)
 
 tmpfs mounts store container data directly in RAM.
 
@@ -283,7 +283,7 @@ nginx
 
 ---
 
-## 📊 Comparison of Docker Storage Types
+## Comparison of Docker Storage Types
 
 | Feature | Volume | Bind Mount | tmpfs |
 |--------|--------|-----------|-------|
@@ -296,7 +296,7 @@ nginx
 
 ---
 
-## 📈 Observations
+## Observations
 
 - Docker volumes maintain data even when containers are deleted
 - MySQL database files remain intact across container restarts
@@ -305,7 +305,7 @@ nginx
 
 ---
 
-## ✅ Result
+## Result
 
 - Docker volume created successfully
 - MySQL container used persistent storage
@@ -315,7 +315,7 @@ nginx
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
 This experiment demonstrates the flexibility of Docker's storage mechanisms. Docker volumes are the preferred solution for persistent application data such as databases. Bind mounts provide real-time host-container synchronization, which is highly useful during development workflows. tmpfs mounts offer high-performance temporary storage suitable for caching and sensitive data operations.
 
