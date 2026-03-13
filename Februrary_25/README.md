@@ -2,7 +2,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 This practical demonstrates how **Docker Compose** can be used to manage both **single‑container** and **multi‑container** applications in a structured way.  
 Docker Compose allows developers to define an entire application stack using a single **YAML configuration file**, simplifying deployment, networking, and persistent storage management.
@@ -18,7 +18,7 @@ This experiment demonstrates how real DevOps workflows deploy applications using
 
 ---
 
-# 🧠 Learning Objectives
+# Learning Objectives
 
 - Understand the concept of **Docker Compose**
 - Deploy containers using a **compose YAML file**
@@ -30,7 +30,7 @@ This experiment demonstrates how real DevOps workflows deploy applications using
 
 ---
 
-# 🛠 Technologies Used
+# Technologies Used
 
 | Tool | Purpose |
 |-----|--------|
@@ -44,7 +44,7 @@ This experiment demonstrates how real DevOps workflows deploy applications using
 
 ---
 
-# 📂 Project Directory Structure
+# Project Directory Structure
 
 ```
 Class Practical 25 Feb
@@ -60,7 +60,7 @@ Class Practical 25 Feb
 
 ---
 
-# 🌐 PART 1 — Running Nginx using Docker Compose
+# PART 1 — Running Nginx using Docker Compose
 
 ## docker-compose.yml
 
@@ -80,7 +80,7 @@ services:
 
 ---
 
-## 📄 Create HTML Directory
+## Create HTML Directory
 
 ```bash
 mkdir html
@@ -101,7 +101,7 @@ notepad html/index.html
 
 <body>
 
-<h1>🚀 Docker Compose Nginx Server</h1>
+<h1>Docker Compose Nginx Server</h1>
 
 <p>This webpage is served using an Nginx container managed by Docker Compose.</p>
 
@@ -114,7 +114,7 @@ notepad html/index.html
 
 ---
 
-## ▶️ Commands Used
+## Commands Used
 
 ### Start Nginx Container
 
@@ -142,7 +142,7 @@ docker compose down
 
 ---
 
-# 🧩 PART 2 — WordPress + MySQL Multi‑Container Setup
+# PART 2 — WordPress + MySQL Multi‑Container Setup
 
 Docker Compose allows multiple services to run together with automatic networking and dependency management.
 
@@ -202,7 +202,7 @@ networks:
 
 ---
 
-# ⚙️ Docker Compose Commands
+# Docker Compose Commands
 
 ### Start WordPress Stack
 
@@ -244,7 +244,7 @@ docker compose -f docker-compose-wordpress.yml down
 
 ---
 
-# 🌍 Accessing the Application
+# Accessing the Application
 
 Once the containers are running, open the browser:
 
@@ -256,7 +256,7 @@ The WordPress installation screen will appear where the site configuration can b
 
 ---
 
-# 📊 Expected Output
+# Expected Output
 
 • Nginx container successfully serves a webpage on port **8080**  
 • WordPress container connects to MySQL database container  
@@ -266,7 +266,7 @@ The WordPress installation screen will appear where the site configuration can b
 
 ---
 
-# 🧠 Concepts Demonstrated
+# Concepts Demonstrated
 
 ## Docker Compose
 
@@ -308,7 +308,7 @@ depends_on:
 
 ---
 
-# 📈 Architecture Diagram
+# Architecture Diagram
 
 ```
         User Browser
@@ -325,7 +325,7 @@ depends_on:
 
 ---
 
-# ✅ Result
+# Result
 
 The Docker Compose environment successfully deployed:
 
@@ -337,7 +337,7 @@ The Docker Compose environment successfully deployed:
 
 ---
 
-# 🏁 Conclusion
+# Conclusion
 
 This experiment demonstrates how Docker Compose simplifies the deployment of both simple and complex containerized applications. By defining services in a YAML configuration file, developers can quickly deploy full application stacks with networking and storage already configured.
 
