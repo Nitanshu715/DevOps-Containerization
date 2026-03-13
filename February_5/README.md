@@ -2,7 +2,7 @@
 
 ---
 
-# 🧠 Project Overview
+# Project Overview
 
 This practical demonstrates how a Python-based application can be containerized using Docker.
 The application verifies a user's SAP ID by comparing it with a predefined SAP ID stored inside the program.
@@ -22,7 +22,7 @@ inside the container before executing the application.
 
 ---
 
-# 🎯 Objectives
+# Objectives
 
 - Use an official Docker base image
 - Containerize a Python application
@@ -35,7 +35,7 @@ inside the container before executing the application.
 
 ---
 
-# 🛠 Technologies Used
+# Technologies Used
 
 Docker Desktop  
 Docker CLI  
@@ -46,7 +46,7 @@ Git & GitHub
 
 ---
 
-# 🏗 DevOps Workflow Demonstrated
+# DevOps Workflow Demonstrated
 
 Application Development
         ↓
@@ -60,7 +60,7 @@ Application Testing
 
 ---
 
-# 📁 Project Structure
+# Project Structure
 
 Class-Test-5-Feb-SAPID/
 │
@@ -70,7 +70,7 @@ Class-Test-5-Feb-SAPID/
 
 ---
 
-# 🧾 Python Application Code (app.py)
+# Python Application Code (app.py)
 
 ```python
 import numpy as np
@@ -87,7 +87,7 @@ else:
 
 ---
 
-# 🐳 Dockerfile
+# Dockerfile
 
 ```dockerfile
 FROM python:3.10-slim
@@ -103,7 +103,7 @@ CMD ["python", "app.py"]
 
 ---
 
-# 📦 Dockerfile Instruction Explanation
+# Dockerfile Instruction Explanation
 
 FROM python:3.10-slim  
 → Uses the official lightweight Python 3.10 base image.
@@ -122,7 +122,7 @@ CMD ["python", "app.py"]
 
 ---
 
-# ⚙️ Step‑by‑Step Execution
+# Step‑by‑Step Execution
 
 # Step 1 — Navigate to Project Directory
 
@@ -208,7 +208,7 @@ Not Matched
 
 ---
 
-# 📊 Docker Concepts Demonstrated
+# Docker Concepts Demonstrated
 
 Docker Base Image Usage  
 Dependency Installation Inside Container  
@@ -219,7 +219,7 @@ Application Isolation Using Containers
 
 ---
 
-# 📈 Advantages of Docker Containerization
+# Advantages of Docker Containerization
 
 Consistent runtime environment  
 Application portability  
@@ -230,7 +230,7 @@ Simplified DevOps workflows
 
 ---
 
-# 🧪 DevOps Application Packaging Flow
+# DevOps Application Packaging Flow
 
 Developer writes Python application  
         ↓
@@ -246,7 +246,7 @@ Application executed inside isolated environment
 
 ---
 
-# 📷 Suggested Screenshots
+# Suggested Screenshots
 
 Dockerfile Code  
 Python Application Code  
@@ -256,7 +256,7 @@ Container Execution Output
 
 ---
 
-# ✅ Result
+# Result
 
 The Python SAP ID verification application was successfully containerized using Docker.
 A custom Docker image was created using the official Python base image and executed
@@ -264,10 +264,9 @@ inside a container environment where the application was tested interactively.
 
 ---
 
-# 🏁 Conclusion
+# Conclusion
 
 This practical demonstrates how Docker can be used to package applications along
 with their dependencies into portable containers. Containerization ensures that
 applications run consistently across different environments, making Docker a
 fundamental tool in modern DevOps, cloud computing, and microservices architectures.
-
