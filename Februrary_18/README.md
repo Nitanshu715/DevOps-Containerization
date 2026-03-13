@@ -1,9 +1,9 @@
-# 🐳 Docker Networking Practical
+# Docker Networking Practical
 ## Bridge Network, Custom User‑Defined Networks & Container Communication
 
 ---
 
-## 📌 Overview
+## Overview
 
 This practical explores the networking architecture used by Docker containers. Docker networking enables containers to communicate with each other, with the host system, and with external networks.
 
@@ -22,7 +22,7 @@ The experiment demonstrates:
 
 ---
 
-## 🛠 Technologies and Tools Used
+## Technologies and Tools Used
 
 | Tool | Purpose |
 |-----|------|
@@ -36,7 +36,7 @@ The experiment demonstrates:
 
 ---
 
-## 🧠 Learning Objectives
+## Learning Objectives
 
 After completing this practical, the following networking concepts are understood:
 
@@ -313,7 +313,7 @@ Cleanup ensures no unused resources remain.
 
 ---
 
-# 🧪 Result
+# Result
 
 The following tasks were successfully completed:
 
@@ -327,7 +327,7 @@ The following tasks were successfully completed:
 
 ---
 
-# 📚 Key Concepts Learned
+# Key Concepts Learned
 
 ### Docker Bridge Network
 
@@ -357,7 +357,7 @@ Containers communicate using:
 
 ---
 
-# 🎯 Conclusion
+# Conclusion
 
 This practical demonstrates the internal networking mechanisms used by Docker containers. Understanding Docker networking is essential for building scalable containerized applications, microservices architectures, and distributed systems.
 
