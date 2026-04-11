@@ -436,6 +436,20 @@ This experiment demonstrated how Docker Compose can scale services easily using 
 Link:
 [Class Practical 26 Feb](./Februrary_26/)
 
+
+### Class Practical — 10 Apr (FastAPI CI/CD Pipeline — Docker & GitHub Actions Integration)
+This practical demonstrates the implementation of an end-to-end CI/CD pipeline by containerizing a FastAPI application and automating its build and deployment using GitHub Actions.
+- Developed a FastAPI application and containerized it using Docker for consistent and portable deployment  
+- Implemented a CI/CD pipeline using GitHub Actions to automate image build and push on every code update  
+- Integrated Docker Hub as a container registry for storing and managing versioned images  
+- Secured authentication using GitHub Secrets to handle Docker credentials safely  
+- Designed a modular workflow that targets only the April_10 project within a multi-experiment repository  
+- Validated deployment by running the containerized application and verifying output through browser access  
+
+Link:
+[Class Practical 10 Apr](./April_10/)
+
+
 ---
 
 
