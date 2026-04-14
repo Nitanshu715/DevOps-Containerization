@@ -515,6 +515,26 @@ This practical demonstrates real-world Kubernetes capabilities including deploym
 Link:
 [Class Practical 25 Mar](./March_25/)
 
+### Class Practical - March 27 (Imperative vs Declarative Deployment)
+
+A practical session focused on understanding and implementing imperative and declarative approaches in Kubernetes by deploying and managing an NGINX application.
+
+Deployment was created using imperative command-based approach
+Application resources were verified using kubectl commands
+YAML configuration file was generated using dry-run method
+Deployment configuration was modified using declarative YAML approach
+Existing deployment was replaced using declarative configuration
+Multiple replicas were created using replica configuration
+Deployment state and behavior were verified using describe
+Application was accessed using port forwarding
+Scaling operation was performed to increase number of pods
+Resources were cleaned up after execution
+
+This practical demonstrates the difference between imperative and declarative models and highlights the importance of declarative configuration in Kubernetes for scalability, reproducibility, and version control.
+
+Link:
+[Class Practical 27 Mar](./March_27/)
+
 
 ### Class Practical — 10 Apr (FastAPI CI/CD Pipeline — Docker & GitHub Actions Integration)
 This practical demonstrates the implementation of an end-to-end CI/CD pipeline by containerizing a FastAPI application and automating its build and deployment using GitHub Actions.
