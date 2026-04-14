@@ -436,7 +436,7 @@ This experiment demonstrated how Docker Compose can scale services easily using 
 Link:
 [Class Practical 26 Feb](./Februrary_26/)
 
-### Class Practical — March 18 — (Kubernetes Setup using k3d)
+### Class Practical — March 18 (Kubernetes Setup using k3d)
 
 A practical session focused on setting up a local Kubernetes cluster using k3d and performing core orchestration tasks including deployment, service exposure, scaling, and verification.
 
@@ -457,7 +457,7 @@ This practical demonstrates fundamental Kubernetes operations including cluster 
 Link:
 [Class Practical 18 Mar](./March_18/)
 
-### Class Practical - March 19 — (Kubernetes Deployment & Service Exposure)
+### Class Practical - March 19 (Kubernetes Deployment & Service Exposure)
 
 A practical session focused on deploying an application in Kubernetes, managing pods, scaling deployments, exposing services, and verifying outputs using kubectl commands.
 
@@ -475,6 +475,25 @@ This practical demonstrates core Kubernetes concepts including deployment, scali
 
 Link:
 [Class Practical 19 Mar](./March_19/)
+
+### Class Practical - March 20 (Docker Swarm & Advanced Networking)
+
+A practical session focused on advanced Docker networking concepts and container orchestration using Docker Swarm.
+
+Custom bridge network was created and inter-container communication was verified
+Docker Swarm was initialized and cluster mode was enabled
+Overlay network was created for multi-container communication
+Containers were deployed inside overlay network and connectivity was verified
+Docker service was created and scaled to multiple replicas
+Service state and replicas were validated using CLI commands
+Production overlay network was created for scalable deployments
+Macvlan networking was attempted and analyzed with platform limitations
+Application was successfully accessed via browser
+
+This practical demonstrates Docker networking, service orchestration, and scaling in a Swarm environment.
+
+Link:
+[Class Practical 20 Mar](./March_20/)
 
 
 ### Class Practical — 10 Apr (FastAPI CI/CD Pipeline — Docker & GitHub Actions Integration)
