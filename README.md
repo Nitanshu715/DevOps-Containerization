@@ -457,6 +457,25 @@ This practical demonstrates fundamental Kubernetes operations including cluster 
 Link:
 [Class Practical 18 Mar](./March_18/)
 
+### Class Practical - March 19 — (Kubernetes Deployment & Service Exposure)
+
+A practical session focused on deploying an application in Kubernetes, managing pods, scaling deployments, exposing services, and verifying outputs using kubectl commands.
+
+Application was deployed using Kubernetes Deployment resource
+Pods were automatically created and managed by the Deployment controller
+Deployment was scaled to multiple replicas demonstrating horizontal scaling
+Service was exposed using NodePort for external communication
+Application was accessed using port-forwarding in local environment
+Deployment configuration and state were verified using describe command
+Container logs were inspected for runtime validation
+All cluster resources were validated using kubectl get all
+Common errors were identified and resolved during execution
+
+This practical demonstrates core Kubernetes concepts including deployment, scaling, service exposure, and debugging workflows.
+
+Link:
+[Class Practical 19 Mar](./March_19/)
+
 
 ### Class Practical — 10 Apr (FastAPI CI/CD Pipeline — Docker & GitHub Actions Integration)
 This practical demonstrates the implementation of an end-to-end CI/CD pipeline by containerizing a FastAPI application and automating its build and deployment using GitHub Actions.
