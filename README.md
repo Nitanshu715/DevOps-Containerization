@@ -535,6 +535,24 @@ This practical demonstrates the difference between imperative and declarative mo
 Link:
 [Class Practical 27 Mar](./March_27/)
 
+### Class Practical — April 1 (Jenkins on Docker)
+
+A practical session focused on deploying Jenkins using Docker and performing initial CI/CD server setup including configuration, persistence, and validation.
+
+Jenkins server was successfully deployed using Docker Compose
+Container was created and managed using Docker runtime
+Port mapping was configured to expose Jenkins on localhost
+Persistent storage was implemented using Docker volumes
+Jenkins was accessed through browser and initial setup was completed
+Admin password was retrieved from container for authentication
+Plugins were installed to enable CI/CD functionality
+User account was created and dashboard was configured
+Container logs were verified to ensure proper execution
+
+This practical demonstrates containerized CI/CD server setup, persistent storage handling, and basic Jenkins configuration using Docker.
+
+Link:
+[Class Practical 1 Apr](./April_1/)
 
 ### Class Practical — 10 Apr (FastAPI CI/CD Pipeline — Docker & GitHub Actions Integration)
 This practical demonstrates the implementation of an end-to-end CI/CD pipeline by containerizing a FastAPI application and automating its build and deployment using GitHub Actions.
