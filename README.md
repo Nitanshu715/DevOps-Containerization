@@ -436,6 +436,27 @@ This experiment demonstrated how Docker Compose can scale services easily using 
 Link:
 [Class Practical 26 Feb](./Februrary_26/)
 
+### Class Practical — March 18 — (Kubernetes Setup using k3d)
+
+A practical session focused on setting up a local Kubernetes cluster using k3d and performing core orchestration tasks including deployment, service exposure, scaling, and verification.
+
+Kubernetes cluster was successfully created locally using k3d
+Cluster connectivity was configured and verified using kubectl
+Node status was validated and confirmed in Ready state
+Nginx application was deployed using a Kubernetes Deployment
+Pods were automatically created and managed by the Deployment
+Service was exposed using NodePort for external access
+Application scaling was performed to run multiple replicas
+Deployment state and configuration were verified using describe
+Container logs were inspected for runtime validation
+Port forwarding was used to enable browser access
+Application output was successfully verified in browser
+
+This practical demonstrates fundamental Kubernetes operations including cluster setup, deployment, scaling, service exposure, and debugging.
+
+Link:
+[Class Practical 18 Mar](./March_18/)
+
 
 ### Class Practical — 10 Apr (FastAPI CI/CD Pipeline — Docker & GitHub Actions Integration)
 This practical demonstrates the implementation of an end-to-end CI/CD pipeline by containerizing a FastAPI application and automating its build and deployment using GitHub Actions.
