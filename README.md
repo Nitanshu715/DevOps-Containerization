@@ -573,6 +573,24 @@ This practical demonstrates secure GitHub authentication, efficient version cont
 Link:
 [Class Practical 7 Apr](./April_7/)
 
+### Class Practical — April 9 (Git Workflow and Branching)
+
+A practical session focused on core Git workflows including cloning a repository, committing changes, working with branches, and merging feature work.
+
+Repository was cloned from GitHub to local system
+Branch information was inspected using Git commands
+Files were created, staged, and committed to the repository
+Commit history was analyzed using log and graph view
+Feature branch was created to simulate development workflow
+Changes were made and committed within the feature branch
+Branch divergence was observed through commit history
+Feature branch was merged back into main branch
+Final changes were pushed and organized within repository
+
+This practical demonstrates fundamental Git operations including version control, branching strategies, commit tracking, and merging workflows.
+
+Link:
+[Class Practical 9 Apr](./April_9/)
 
 ### Class Practical — 10 Apr (FastAPI CI/CD Pipeline — Docker & GitHub Actions Integration)
 This practical demonstrates the implementation of an end-to-end CI/CD pipeline by containerizing a FastAPI application and automating its build and deployment using GitHub Actions.
