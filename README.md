@@ -476,21 +476,21 @@ This practical demonstrates core Kubernetes concepts including deployment, scali
 Link:
 [Class Practical 19 Mar](./March_19/)
 
-### Class Practical - March 20 (Docker Swarm & Advanced Networking)
+### Class Practical - March 20 (Docker & Portainer Setup)
 
-A practical session focused on advanced Docker networking concepts and container orchestration using Docker Swarm.
+A practical session focused on Docker container management and deploying Portainer for GUI-based container orchestration.
 
-Custom bridge network was created and inter-container communication was verified
-Docker Swarm was initialized and cluster mode was enabled
-Overlay network was created for multi-container communication
-Containers were deployed inside overlay network and connectivity was verified
-Docker service was created and scaled to multiple replicas
-Service state and replicas were validated using CLI commands
-Production overlay network was created for scalable deployments
-Macvlan networking was attempted and analyzed with platform limitations
-Application was successfully accessed via browser
+Docker environment was verified using CLI commands  
+Kubernetes context was checked and validated  
+Portainer volume was created for persistent storage  
+Portainer container was deployed and verified running  
+Web interface was accessed securely via HTTPS  
+Admin configuration and local Docker environment setup completed  
+Containers, images, volumes, and networks were managed through GUI  
+Real-time monitoring and container inspection were performed  
+Minikube limitations were identified in certain environments  
 
-This practical demonstrates Docker networking, service orchestration, and scaling in a Swarm environment.
+This practical demonstrates Docker container management and GUI-based orchestration using Portainer.
 
 Link:
 [Class Practical 20 Mar](./March_20/)
