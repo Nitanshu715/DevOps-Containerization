@@ -554,6 +554,26 @@ This practical demonstrates containerized CI/CD server setup, persistent storage
 Link:
 [Class Practical 1 Apr](./April_1/)
 
+### Class Practical — April 7 (Git & GitHub SSH Setup)
+
+A practical session focused on configuring Git, setting up SSH authentication with GitHub, and performing version control operations including repository initialization, branching, and remote integration.
+
+Git global configuration was set for user identity
+SSH key pair was generated using ED25519 algorithm
+Public key was added to GitHub for secure authentication
+SSH connection to GitHub was successfully verified
+Local repository was initialized and initial commit was created
+Branching workflow was implemented using a feature branch
+Files were staged, committed, and managed using Git
+Remote repository was connected using SSH protocol
+Code was successfully pushed to GitHub for both main and feature branch
+
+This practical demonstrates secure GitHub authentication, efficient version control workflows, and branch-based development using Git.
+
+Link:
+[Class Practical 7 Apr](./April_7/)
+
+
 ### Class Practical — 10 Apr (FastAPI CI/CD Pipeline — Docker & GitHub Actions Integration)
 This practical demonstrates the implementation of an end-to-end CI/CD pipeline by containerizing a FastAPI application and automating its build and deployment using GitHub Actions.
 - Developed a FastAPI application and containerized it using Docker for consistent and portable deployment  
@@ -566,9 +586,7 @@ This practical demonstrates the implementation of an end-to-end CI/CD pipeline b
 Link:
 [Class Practical 10 Apr](./April_10/)
 
-
 ---
-
 
 ## Technologies & Tools Used
 
