@@ -495,6 +495,26 @@ This practical demonstrates Docker container management and GUI-based orchestrat
 Link:
 [Class Practical 20 Mar](./March_20/)
 
+### Class Practical - March 25 (Apache Web Application on Kubernetes)
+
+A practical session focused on deploying and managing an Apache web server on Kubernetes, covering pod lifecycle, deployment management, service exposure, scaling, debugging, and live container modification.
+
+Apache application was deployed using both Pod and Deployment approaches
+Pod behavior and lifecycle were verified using Kubernetes CLI commands
+Application was accessed locally using port-forwarding
+Deployment was created to manage pods in a controlled and scalable manner
+Service was exposed to enable network access to the application
+Application scaling was performed to run multiple replicas
+Failure scenario was simulated using incorrect image configuration
+Deployment was debugged and restored to a healthy state
+Live container content was modified using exec command
+Self-healing capability was verified by deleting pods and observing automatic recreation
+
+This practical demonstrates real-world Kubernetes capabilities including deployment control, scaling, debugging, and self-healing mechanisms.
+
+Link:
+[Class Practical 25 Mar](./March_25/)
+
 
 ### Class Practical — 10 Apr (FastAPI CI/CD Pipeline — Docker & GitHub Actions Integration)
 This practical demonstrates the implementation of an end-to-end CI/CD pipeline by containerizing a FastAPI application and automating its build and deployment using GitHub Actions.
