@@ -1,4 +1,3 @@
-
 # Experiment - 6 - Docker Run vs Docker Compose - Detailed Practical Implementation
 
 ## Introduction
