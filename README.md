@@ -148,6 +148,22 @@ Container lifecycle was managed using compose commands
 
 Link: [Experiment 6 - Docker Run vs Docker Compose](./Experiment-6/)
 
+### Experiment 7 — CI/CD Pipeline using Jenkins and Docker
+
+A practical session focused on implementing a complete CI/CD pipeline integrating Jenkins and Docker Hub for automated build and deployment of containerized applications.
+
+Application was developed using Flask framework
+Dockerfile was created to containerize the application
+Jenkins pipeline was defined using declarative syntax
+Jenkins was configured to execute pipeline stages successfully
+Docker image was built automatically using pipeline execution
+Docker Hub credentials were securely managed within Jenkins
+Pipeline successfully authenticated with Docker Hub
+Docker image was pushed to Docker Hub repository
+Pipeline execution was verified with successful build status
+End-to-end CI/CD workflow was achieved without errors
+
+Link: [Experiment 7 - CI/CD Pipeline using Jenkins and Docker](./Experiment-7/)
 
 ---
 
