@@ -131,6 +131,24 @@ The experiment demonstrated a practical understanding of:
 
 Link: [Experiment 5 - Docker Networking, Volumes & Environment Variables Lab](./Experiment-5/)
 
+### Experiment 6 — Docker Run vs Docker Compose
+
+A practical session focused on comparing imperative and declarative container deployment using Docker Run and Docker Compose, including single and multi-container applications.
+
+Single container application was deployed using docker run command
+Container execution was verified using docker ps
+Application was accessed through browser using port mapping
+Docker Compose configuration file was created using YAML format
+Single container deployment was replicated using Docker Compose
+Multi-container application consisting of WordPress and MySQL was deployed
+Service dependencies and environment variables were configured
+Application communication between containers was established
+Persistent storage concepts were explored using Docker volumes
+Container lifecycle was managed using compose commands
+
+Link: [Experiment 6 - Docker Run vs Docker Compose](./Experiment-6/)
+
+
 ---
 
 
