@@ -1,0 +1,6 @@
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: lab-nginx-compose
+    ports:
+      - "8091:80"
