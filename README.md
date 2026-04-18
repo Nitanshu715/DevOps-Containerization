@@ -207,6 +207,24 @@ Docker containers were stopped and removed after completion.
 
 Link: [Experiment 9 - Ansible Automation with Docker](./Experiment-9/)
 
+# Experiment 10 – CI/CD Pipeline using Jenkins, Docker & SonarQube
+
+All objectives of Experiment 10 were successfully completed. The experiment demonstrated a practical and production-oriented understanding of:
+
+End-to-end CI/CD pipeline design and automation
+Integration of Jenkins with Docker for containerized builds
+Continuous code quality analysis using SonarQube Cloud
+Secure credential management using GitHub Secrets (SONAR_TOKEN, DOCKER_TOKEN)
+Automated Docker image build and push workflow
+GitHub integration for triggering pipeline execution on code changes
+Multi-stage pipeline execution (Build → Analyze → Package → Push)
+Real-time pipeline monitoring and build history tracking in Jenkins
+Code quality validation using Quality Gates, Issues, and Metrics
+Handling real-world DevOps challenges (port conflicts, container failures, architecture mismatch)
+
+The implementation validates proper CI/CD practices, DevOps automation workflows, and industry-standard integration between version control, build systems, containerization, and code quality tools.
+
+Link: [Experiment 10 – CI/CD Pipeline with Jenkins, Docker & SonarQube](./Experiment-10/)
 
 ---
 
