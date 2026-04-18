@@ -188,6 +188,26 @@ Real-world debugging and system configuration
 
 Link: [Experiment 8 - Configuration Management using Ansible](./Experiment-8/)
 
+# Experiment 9 - Ansible Automation with Docker (WSL-Based Setup)
+
+The experiment was successfully completed by implementing configuration management and automation using Ansible over multiple Docker containers acting as remote servers. The following outcomes were achieved:
+
+Ansible was successfully installed and configured in WSL (Ubuntu).
+Docker containers were created to simulate multiple remote servers.
+SSH key-based authentication was established for secure, passwordless access.
+Ansible inventory file was created to manage multiple nodes.
+Connectivity between control node and managed nodes was verified using Ansible ping.
+YAML-based playbook was created and executed successfully.
+System packages (vim, htop, wget) were installed across all nodes automatically.
+Configuration file was created on all servers using Ansible automation.
+Tasks were executed simultaneously on multiple containers without manual login.
+Idempotency was demonstrated by running the playbook multiple times without unintended changes.
+Verification was performed using Ansible command module to confirm successful execution.
+Docker containers were stopped and removed after completion.
+
+Link: [Experiment 9 - Ansible Automation with Docker](./Experiment-9/)
+
+
 ---
 
 
