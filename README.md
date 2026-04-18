@@ -190,7 +190,7 @@ Real-world debugging and system configuration
 
 Link: [Experiment 8 - Configuration Management using Ansible](./Experiment-8/)
 
-### Experiment 9 - Ansible Automation with Docker (WSL-Based Setup)
+### Experiment 9 — Ansible Automation with Docker (WSL-Based Setup)
 
 The experiment was successfully completed by implementing configuration management and automation using Ansible over multiple Docker containers acting as remote servers. The following outcomes were achieved:
 
@@ -209,7 +209,7 @@ Docker containers were stopped and removed after completion.
 
 Link: [Experiment 9 - Ansible Automation with Docker](./Experiment-9/)
 
-### Experiment 10 – CI/CD Pipeline using Jenkins, Docker & SonarQube
+### Experiment 10 — CI/CD Pipeline using Jenkins, Docker & SonarQube
 
 All objectives of Experiment 10 were successfully completed. The experiment demonstrated a practical and production-oriented understanding of:
 
