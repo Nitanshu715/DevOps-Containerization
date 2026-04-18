@@ -165,6 +165,29 @@ End-to-end CI/CD workflow was achieved without errors
 
 Link: [Experiment 7 - CI/CD Pipeline using Jenkins and Docker](./Experiment-7/)
 
+## Experiment 8 — Configuration Management using Ansible (Chef Solo vs Ansible)
+
+The experiment was successfully completed by implementing configuration management using Ansible and comparing it with Chef Solo. The following outcomes were achieved:
+
+Ansible was installed and configured successfully on a local control node (WSL Ubuntu).
+Inventory file was created to define the managed node (localhost).
+Connectivity was verified using the Ansible ping module.
+Playbook was developed using YAML to automate installation and configuration of Nginx.
+Playbook execution completed successfully with zero failures.
+Nginx service was installed and started using Ansible automation.
+A 502 Bad Gateway error was encountered and resolved by correcting Nginx configuration.
+Static web server configuration was implemented for proper content serving.
+Final output was verified using curl command.
+
+Key concepts demonstrated include:
+Configuration Management using Ansible
+Agentless architecture and push-based execution
+Inventory and Playbook structure
+Service automation and deployment
+Real-world debugging and system configuration
+
+Link: [Experiment 8 - Configuration Management using Ansible](./Experiment-8/)
+
 ---
 
 
