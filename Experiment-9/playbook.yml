@@ -1,0 +1,19 @@
+---
+- name: Configure servers
+  hosts: servers
+  become: yes
+
+  tasks:
+    - name: Update packages
+      apt:
+        update_cache: yes
+
+    - name: Install packages
+      apt:
+        name: ["vim", "htop", "wget"]
+        state: present
+
+    - name: Create file
+      copy:
+        dest: /root/test_file.txt
+        content: "Configured by Nitanshu using Ansible"
