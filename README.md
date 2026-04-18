@@ -21,6 +21,8 @@
 This repository serves as the **master lab repository** for the subject  
 **Containerization and DevOps**.
 
+The link to the deployed pages for this repository is: https://nitanshu715.github.io/DevOps-Containerization/
+
 Each experiment is organized in its **own folder**, containing:
 - Experiment-specific source files
 - Individual README documentation
@@ -165,7 +167,7 @@ End-to-end CI/CD workflow was achieved without errors
 
 Link: [Experiment 7 - CI/CD Pipeline using Jenkins and Docker](./Experiment-7/)
 
-## Experiment 8 — Configuration Management using Ansible (Chef Solo vs Ansible)
+### Experiment 8 — Configuration Management using Ansible (Chef Solo vs Ansible)
 
 The experiment was successfully completed by implementing configuration management using Ansible and comparing it with Chef Solo. The following outcomes were achieved:
 
@@ -188,7 +190,7 @@ Real-world debugging and system configuration
 
 Link: [Experiment 8 - Configuration Management using Ansible](./Experiment-8/)
 
-# Experiment 9 - Ansible Automation with Docker (WSL-Based Setup)
+### Experiment 9 - Ansible Automation with Docker (WSL-Based Setup)
 
 The experiment was successfully completed by implementing configuration management and automation using Ansible over multiple Docker containers acting as remote servers. The following outcomes were achieved:
 
@@ -207,7 +209,7 @@ Docker containers were stopped and removed after completion.
 
 Link: [Experiment 9 - Ansible Automation with Docker](./Experiment-9/)
 
-# Experiment 10 – CI/CD Pipeline using Jenkins, Docker & SonarQube
+### Experiment 10 – CI/CD Pipeline using Jenkins, Docker & SonarQube
 
 All objectives of Experiment 10 were successfully completed. The experiment demonstrated a practical and production-oriented understanding of:
 
@@ -221,8 +223,6 @@ Multi-stage pipeline execution (Build → Analyze → Package → Push)
 Real-time pipeline monitoring and build history tracking in Jenkins
 Code quality validation using Quality Gates, Issues, and Metrics
 Handling real-world DevOps challenges (port conflicts, container failures, architecture mismatch)
-
-The implementation validates proper CI/CD practices, DevOps automation workflows, and industry-standard integration between version control, build systems, containerization, and code quality tools.
 
 Link: [Experiment 10 – CI/CD Pipeline with Jenkins, Docker & SonarQube](./Experiment-10/)
 
