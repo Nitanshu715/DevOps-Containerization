@@ -782,7 +782,7 @@ making this repository suitable for **academic evaluation** as well as **portfol
 
 ## Author
 
-**Name:** Nitanshu  
+**Name:** Nitanshu Tak
 **Program:** B.Tech Computer Science Engineering  
 **Specialization:** Cloud Computing & Virtualization Technology  
 **Focus Areas:** DevOps · Cloud · Automation · Linux
