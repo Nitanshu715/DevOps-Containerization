@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webtest
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: webtest
+  template:
+    metadata:
+      labels:
+        app: webtest
+    spec:
+      containers:
+      - name: webtest
+        image: hashicorp/http-echo
+        args:
+          - "-text=Hello from Kubernetes"
+        ports:
+        - containerPort: 5678
