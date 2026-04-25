@@ -226,6 +226,53 @@ Handling real-world DevOps challenges (port conflicts, container failures, archi
 
 Link: [Experiment 10 – CI/CD Pipeline with Jenkins, Docker & SonarQube](./Experiment-10/)
 
+### Experiment 11 — Container Orchestration using Docker Swarm
+
+This experiment focuses on implementing container orchestration using Docker Swarm to deploy a multi-container WordPress application with MySQL as the backend. The objective was to understand how Docker Swarm manages services, scaling, load balancing, and fault tolerance in a distributed environment.
+
+The experiment demonstrates:
+
+- Docker Swarm was initialized to convert a standalone Docker environment into a clustered orchestration system  
+- A multi-container application (WordPress + MySQL) was deployed using a declarative YAML configuration file  
+- Services were created using `docker stack deploy`, replacing traditional container-based execution  
+- WordPress service was configured with multiple replicas to simulate horizontal scaling  
+- Docker Swarm automatically distributed traffic across replicas using its internal load balancer  
+- Application accessibility was verified through browser using a single exposed port  
+- Container lifecycle and service state were monitored using `docker service ls` and `docker ps`  
+- Self-healing capability was demonstrated by manually killing a container and observing automatic recreation  
+- The system maintained desired state by ensuring the specified number of replicas were always running  
+- High availability was simulated as the application remained accessible even after container failure  
+
+This experiment highlights core orchestration features such as **service-based deployment, scaling, load balancing, and self-healing**, which are essential for modern cloud-native applications.
+
+Link: [Experiment 11 — Docker Swarm Orchestration](./Experiment-11/)
+
+---
+
+### Experiment 12 — Container Orchestration using Kubernetes (Minikube)
+
+This experiment builds upon container orchestration concepts by implementing Kubernetes as a more advanced orchestration platform. The objective was to deploy, manage, and scale a containerized WordPress application using Kubernetes resources such as Deployments and Services.
+
+The experiment demonstrates:
+
+- Kubernetes cluster was initialized locally using Minikube with Docker as the driver  
+- Cluster status and node readiness were verified using `kubectl` commands  
+- A Deployment resource was created using YAML to define the desired state of the application  
+- Multiple pod replicas were deployed and managed automatically by Kubernetes  
+- Pods were scheduled and monitored using `kubectl get pods` and related commands  
+- A NodePort Service was created to expose the application externally  
+- Application was accessed through browser using Minikube IP and NodePort configuration  
+- Kubernetes service abstraction handled networking and routing to pods  
+- Self-healing capability was demonstrated by deleting a pod and observing automatic recreation by ReplicaSet  
+- Horizontal scaling was performed by increasing the number of replicas dynamically  
+- Deployment state and behavior were validated using Kubernetes CLI tools  
+- Cleanup operations were performed to remove deployed resources after completion  
+
+This experiment demonstrates Kubernetes as a **declarative, scalable, and self-healing orchestration system**, highlighting its ability to manage containerized applications in a production-like environment.
+
+Link: [Experiment 12 — Kubernetes Orchestration](./Experiment-12/)
+
+
 ---
 
 
