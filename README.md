@@ -411,7 +411,7 @@ A hands-on practical session focused on compiling and running a containerized C 
 - Multi-Language Containerized Development Workflow
 
 Link:
-[Class Practical 6 Feb Assignment](./February_7/)
+[Class Practical 6 Feb Assignment](./February_6/)
 
 ### Class Practical — 10 Feb (C Application Containerization & Optimization)
 A hands-on practical series focused on building, running, and optimizing containerized C applications using Docker. This included runtime execution using volume mounts and production-level image optimization using multi-stage builds and minimal scratch runtime images. The practical demonstrated real-world container development workflows through implementation using:
@@ -427,7 +427,7 @@ A hands-on practical series focused on building, running, and optimizing contain
 - Multi-Language Containerized Development Workflow (Python + C)
 
 Link:
-[Class Practical 10 Feb](./February_11/)
+[Class Practical 10 Feb](./February_10/)
 
 ### Class Practical — 10 Feb Assignment (Multi-Stage Build for Java Application with Secure Runtime Container)
 A hands-on practical session focused on implementing enterprise-grade Docker container build workflows using multi-stage builds for Java applications. This practical demonstrated real-world production container optimization by separating build and runtime environments, reducing image size, and improving container security using non-root user implementation through execution using:
