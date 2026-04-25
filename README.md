@@ -355,7 +355,7 @@ A practical session focused on verifying Docker Desktop setup, testing Docker En
 - DevOps Container Deployment Workflow
 
 Link:
-[Class Practical 3 Feb](./Februrary_03/)
+[Class Practical 3 Feb](./February_3/)
 
 ### Class Practical — 4 Feb (Docker Engine Configuration & Remote API Access)
 A hands-on practical session focused on configuring Docker Engine, enabling Remote API communication, and validating daemon connectivity through CLI and UNIX socket testing using:
@@ -369,7 +369,7 @@ A hands-on practical session focused on configuring Docker Engine, enabling Remo
 - DevOps Engine-Level Configuration Workflow
   
 Link:
-[Class Practical 4 Feb](./Februrary_04/)
+[Class Practical 4 Feb](./February_4/)
 
 ### Class Practical Test — 5 Feb (Containerizing Python SAP ID Verification Application)
 A hands-on class test focused on containerizing a Python-based SAP ID verification application using Docker, demonstrating real-world application packaging and execution inside containers through implementation using:
@@ -383,7 +383,7 @@ A hands-on class test focused on containerizing a Python-based SAP ID verificati
 - DevOps Application Packaging and Deployment Workflow
 
 Link:
-[Class Practical Test 5 Feb](./Februrary_05/)
+[Class Practical Test 5 Feb](./February_5/)
 
 ### Class Practical — 6 Feb (Running Python Application Using Docker Volume Mount (Continuous Runtime))
 A hands-on practical session focused on executing a containerized Python application using Docker volume mounting for dynamic runtime execution, demonstrating real-world development workflow through implementation using:
@@ -397,7 +397,7 @@ A hands-on practical session focused on executing a containerized Python applica
 - Real-World Containerized Development Workflow
   
 Link:
-[Class Practical 6 Feb](./Februrary_06/)
+[Class Practical 6 Feb](./February_6/)
 
 ### Class Practical — 6 Feb Assignment (Running C Application Using Docker Volume Mount (Runtime Compilation & Continuous Execution))
 A hands-on practical session focused on compiling and running a containerized C application using Docker volume mounting for dynamic runtime execution, demonstrating multi-language container workflows through implementation using:
@@ -411,7 +411,7 @@ A hands-on practical session focused on compiling and running a containerized C 
 - Multi-Language Containerized Development Workflow
 
 Link:
-[Class Practical 6 Feb Assignment](./Februrary_06/)
+[Class Practical 6 Feb Assignment](./February_7/)
 
 ### Class Practical — 10 Feb (C Application Containerization & Optimization)
 A hands-on practical series focused on building, running, and optimizing containerized C applications using Docker. This included runtime execution using volume mounts and production-level image optimization using multi-stage builds and minimal scratch runtime images. The practical demonstrated real-world container development workflows through implementation using:
@@ -427,7 +427,7 @@ A hands-on practical series focused on building, running, and optimizing contain
 - Multi-Language Containerized Development Workflow (Python + C)
 
 Link:
-[Class Practical 10 Feb](./Februrary_10/)
+[Class Practical 10 Feb](./February_11/)
 
 ### Class Practical — 10 Feb Assignment (Multi-Stage Build for Java Application with Secure Runtime Container)
 A hands-on practical session focused on implementing enterprise-grade Docker container build workflows using multi-stage builds for Java applications. This practical demonstrated real-world production container optimization by separating build and runtime environments, reducing image size, and improving container security using non-root user implementation through execution using:
@@ -448,7 +448,7 @@ A hands-on practical session focused on implementing enterprise-grade Docker con
 - Production Container Security and Enterprise Container Design Workflow
 
 Link:
-[Class Practical 10 Feb Assignment](./Februrary_10/)
+[Class Practical 10 Feb Assignment](./February_10/)
 
 
 ### Class Practical — 11 Feb (Docker Volume Management & Data Persistence)
@@ -467,7 +467,7 @@ A hands-on practical session focused on implementing Docker storage mechanisms u
 - Real-World DevOps Storage Workflow Implementation
 
 Link:
-[Class Practical 11 Feb](./Februrary_11/)
+[Class Practical 11 Feb](./February_11/)
 
 
 ### Class Practical — 11 Feb Assignment (Volume Backup, Restore & Inspection Using TAR & Named Volumes)
@@ -488,7 +488,7 @@ A hands-on practical session focused on implementing advanced Docker storage man
 - Real-World DevOps Storage Backup and Recovery Implementation
   
 Link:
-[Class Practical 11 Feb Assignment](./Februrary_11/)
+[Class Practical 11 Feb Assignment](./February_11/)
 
 ### Class Practical — 12 Feb (Docker Volumes, Bind Mounts, tmpfs & MySQL Persistence)
 This class focused on understanding Docker storage mechanisms by working with named volumes, bind mounts, and tmpfs mounts, along with implementing persistent storage for a MySQL container.
@@ -504,7 +504,7 @@ This class focused on understanding Docker storage mechanisms by working with na
 
 
 Link:
-[Class Practical 12 Feb](./Februrary_12/)
+[Class Practical 12 Feb](./February_12/)
 
 
 ### Class Practical — 18 Feb (Docker Networking — Bridge, Custom Network & Container Communicatione)
@@ -519,7 +519,7 @@ This class focused on understanding Docker networking concepts by working with d
 - Observed networking differences between default and user-defined bridge networks
 
 Link:
-[Class Practical 18 Feb](./Februrary_18/)
+[Class Practical 18 Feb](./February_18/)
 
 ### Class Practical — 20 Feb (Docker Swarm & Advanced Networking Lab — Bridge, Overlay, Services & Macvlan)
 This lab focused on understanding Docker networking from basic container communication to advanced Swarm-based networking, including overlay networks, service scaling, and macvlan configuration.
@@ -540,7 +540,7 @@ This lab focused on understanding Docker networking from basic container communi
 - Compared bridge, overlay, host, and macvlan networking behavior
 
 Link:
-[Class Practical 20 Feb](./Februrary_20/)
+[Class Practical 20 Feb](./February_20/)
 
 ### Class Practical — 23 February (Docker Image Management & Container Lifecycle)
 This class practical demonstrated the fundamental concepts of Docker image management and container lifecycle operations.
@@ -553,7 +553,7 @@ This class practical demonstrated the fundamental concepts of Docker image manag
 - The container lifecycle helps developers efficiently manage application environments.
 
 Link:
-[Class Practical 23 Feb](./Februrary_23/)
+[Class Practical 23 Feb](./February_23/)
 
 ### Class Practical — 25 Feb (Docker Compose – Nginx & WordPress with MySQL)
 This class practical successfully demonstrated the working of Docker Compose for both single-container and multi-container applications. Using Docker Compose:
@@ -564,7 +564,7 @@ This class practical successfully demonstrated the working of Docker Compose for
 - Docker Compose makes container orchestration simple, structured, and efficient for real-world application deployment.
 
 Link:
-[Class Practical 25 Feb](./Februrary_25/)
+[Class Practical 25 Feb](./February_25/)
 
 
 ### Class Practical — 26 Feb (Scaling Services using Docker Compose)
@@ -576,7 +576,7 @@ This experiment demonstrated how Docker Compose can scale services easily using 
 - Docker Compose simplifies multi-container orchestration and service replication, making it useful for real-world distributed application deployment.
 
 Link:
-[Class Practical 26 Feb](./Februrary_26/)
+[Class Practical 26 Feb](./February_26/)
 
 ### Class Practical — March 18 (Kubernetes Setup using k3d)
 
